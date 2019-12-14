@@ -1,0 +1,55 @@
+{
+  "name": "sinon-chai-calls-assertion",
+  "version": "1.0.0",
+  "description": "A simple sinon-chai assertion to validate many aspects of stub calls",
+  "main": "build/src/index.js",
+  "directories": {
+    "bin": "build",
+    "test": "src",
+    "lib": "src"
+  },
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "test": "mocha",
+    "lint": "tslint --project .",
+    "build:dev": "tsc",
+    "build": "npm run lint & npm run build:dev",
+    "test:coverage": "npm run lint && nyc npm test",
+    "test:coverage:lcovonly": "npm run lint && nyc --reporter=lcovonly npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Farenheith/sinon-chai-calls-assertion.git"
+  },
+  "keywords": [
+    "sinon",
+    "chai",
+    "assertions",
+    "calls"
+  ],
+  "author": "Farenheith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Farenheith/sinon-chai-calls-assertion/issues"
+  },
+  "homepage": "https://github.com/Farenheith/sinon-chai-calls-assertion#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.4",
+    "@types/mocha": "^5.2.7",
+    "@types/sinon": "^7.5.0",
+    "gts": "^1.1.0",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "strict-mocha-describers": "github:farenheith/strict-mocha-describers#semver:^1.1.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "sinon": "^7.5.0",
+    "sinon-chai": "^3.3.0"
+  }
+}
