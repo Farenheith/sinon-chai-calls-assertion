@@ -40,4 +40,5 @@ You can also use sinon matchers to validate the parameters instead of exact valu
 ```
 expectCall(myStub,
   [sinon.match.object, sinon.match.string, sinon.match(/.+foo.+goo/)]
+ );
 ```
