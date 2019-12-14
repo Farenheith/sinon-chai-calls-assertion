@@ -22,18 +22,18 @@ expectCall(myStub,
  );
 ```
 
-If you want to check if the sutb had never been called, pass just the stub:
+If you want to check if the stub had never been called, pass just the stub:
 
 ```
 expectCall(myStub);
 ```
 
-If you expect the stub to been called with no parameters, pass empty arrays:
+If you expect the stub to have been called with no parameters, pass empty arrays:
 
 ```
 expectCall(myStub, [], [], [])
 ```
-*(in this example, myStub had been called three times with no parameters)*
+*(in this example, myStub have been called three times with no parameters)*
 
 You can also use sinon matchers to validate the parameters instead of exact values:
 
