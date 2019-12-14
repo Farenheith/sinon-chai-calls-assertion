@@ -13,7 +13,7 @@ Will validate the exactly interaction with the mocked method, which is:
 
 ## How to use?
 
-Just pass the stub in the first parameter and, in the others, arrays with the set of parameter each calls had received.
+Just pass the stub in the first parameter and, in the others, arrays with the set of parameters each calls had received.
 
 ```
 expectCall(myStub,
