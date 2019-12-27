@@ -4,7 +4,9 @@ import '../src';
 import { afterEach, beforeEach, describe, it } from 'mocha';
 
 import { expect } from 'chai';
-import '../src/calls-like';
+import * as chai from 'chai';
+import callsLike from '../src/calls-like';
+chai.use(callsLike);
 
 class Test {
 	method() {

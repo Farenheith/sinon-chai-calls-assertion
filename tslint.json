@@ -5,6 +5,7 @@
         "no-any": false,
         "ban": false,
         "no-namespace": false,
-        "trailing-comma": true
+        "trailing-comma": true,
+        "no-default-export": false
     }
 }

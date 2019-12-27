@@ -1,5 +1,5 @@
 import 'chai';
-import './calls-like';
+import callsLike from './calls-like';
 
 declare global {
 
@@ -12,3 +12,5 @@ declare global {
 		}
 	}
 }
+
+export default callsLike;

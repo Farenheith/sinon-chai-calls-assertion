@@ -1,7 +1,7 @@
 import * as chai from 'chai';
 import * as sinon from 'sinon';
 
-chai.use((_chai, utils) => {
+export default (_chai, utils) => {
 	chai.Assertion.addMethod('callsLike', function fn(...parameters: any[][]) {
 		const stub: sinon.SinonStub = utils.flag(this, 'object');
 			if (stub.callCount === undefined) {
@@ -31,4 +31,4 @@ chai.use((_chai, utils) => {
 	
 		return assertion;
 	});
-});
+}
