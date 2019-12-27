@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const chai = require("chai");
 const sinon = require("sinon");
-exports.default = (_chai, utils) => {
+function callsLike(_chai, utils) {
     chai.Assertion.addMethod('callsLike', function fn(...parameters) {
         const stub = utils.flag(this, 'object');
         if (stub.callCount === undefined) {
@@ -22,5 +22,6 @@ exports.default = (_chai, utils) => {
         }
         return assertion;
     });
-};
+}
+exports.callsLike = callsLike;
 //# sourceMappingURL=calls-like.js.map

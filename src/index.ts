@@ -1,5 +1,4 @@
 import 'chai';
-import callsLike from './calls-like';
 
 declare global {
 
@@ -13,4 +12,5 @@ declare global {
 	}
 }
 
-export default callsLike;
+export { callsLike } from './calls-like';
+export { stubSuperConstructor } from './stub-super-constructor';

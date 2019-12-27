@@ -6,6 +6,7 @@
         "ban": false,
         "no-namespace": false,
         "trailing-comma": true,
-        "no-default-export": false
+        "no-default-export": false,
+        "no-unused-expression": false
     }
 }

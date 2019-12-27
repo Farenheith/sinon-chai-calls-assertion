@@ -5,15 +5,10 @@ import { afterEach, beforeEach, describe, it } from 'mocha';
 
 import { expect } from 'chai';
 import * as chai from 'chai';
-import callsLike from '../src/calls-like';
-chai.use(callsLike);
+import { callsLike } from '../src/calls-like';
 
-class Test {
-	method() {
-		return undefined;
-	}
-}
 describe('expect-call', () => {
+	chai.use(callsLike);
 	afterEach(() => {
 		sinon.restore();
 	});
