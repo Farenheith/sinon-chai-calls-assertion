@@ -21,12 +21,23 @@ class Test extends TestBase {
 	}
 }
 
+let error: Error;
+try {
+	stubSuperConstructor(Test);
+} catch (err) {
+	error = err;
+}
+
 describe('stub-super-constructor.ts', () => {
 	afterEach(() => {
 		sinon.restore();
 	});
 
 	describe('stubSuperConstructor()', () => {
+		it('should throw error if it is called outside test scope', () => {
+			expect(error!).to.be.instanceOf(Error);
+		});
+
 		it('should mock super constructor', () => {
 			const stubSuper = stubSuperConstructor(Test);
 			

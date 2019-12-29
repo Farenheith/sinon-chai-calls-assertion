@@ -5,7 +5,7 @@ declare global {
             /**
              * true if the spy was called at least once.
              */
-            callsLike(...parameters: any[][]): Assertion;
+            callsLike(...parameters: unknown[][]): Assertion;
         }
     }
 }

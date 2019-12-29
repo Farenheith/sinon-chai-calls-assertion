@@ -1,1 +1,2 @@
-export declare function callsLike(_chai: any, utils: any): void;
+/// <reference types="chai" />
+export declare function callsLike(_chai: Chai.ChaiStatic, utils: Chai.ChaiUtils): void;

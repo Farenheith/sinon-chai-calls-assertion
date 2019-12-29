@@ -23,9 +23,32 @@ describe('expect-call', () => {
 
 		it('should accept first parameter comparison and reject second one', () => {
 			const expectator = expect(stub);
-			expectator.callsLike(
-				[1, sinon.match.string, true],
-				['1', sinon.match.number, sinon.match.bool]);
+			let error: Error;
+			try {
+				expectator.callsLike(
+					[1, sinon.match.string, true],
+					['1', sinon.match.number, sinon.match.string]);
+			} catch (err) {
+				error = err;
+			}
+			expect(error!.message).to.match(/^Expected call #1/);
+		});
+
+
+
+		it('should pass tests and return another assertion', () => {
+			const expectator = expect(stub);
+			let error: Error;
+			let result: Chai.Assertion;
+			try {
+				result = expectator.callsLike(
+					[1, sinon.match.string, true],
+					['1', sinon.match.number, sinon.match.bool]);
+			} catch (err) {
+				error = err;
+			}
+			expect(error!).to.be.undefined;
+			expect(result!).to.be.instanceOf(chai.Assertion)
 		});
 	});
 });

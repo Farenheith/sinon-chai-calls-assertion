@@ -1,13 +1,11 @@
 import * as chai from 'chai';
 import * as sinon from 'sinon';
+import { expectTypes } from 'chai/lib/chai/utils';
 
-export function callsLike(_chai, utils) {
-	chai.Assertion.addMethod('callsLike', function fn(...parameters: any[][]) {
+export function callsLike(_chai: Chai.ChaiStatic, utils: Chai.ChaiUtils) {
+	chai.Assertion.addMethod('callsLike', function fn(this: Chai.AssertionStatic, ...parameters: object[][]) {
 		const stub: sinon.SinonStub = utils.flag(this, 'object');
-			if (stub.callCount === undefined) {
-				stub.callCount = 0;
-			}
-			const assertion = chai.expect(stub.callCount)
+		chai.expect(stub.callCount)
 				.eq (parameters.length, `Expected ${
 					stub.name
 				} to have been called ${parameters.length} times but it was called ${
@@ -15,20 +13,20 @@ export function callsLike(_chai, utils) {
 				} times\n`
 			);
 			for (let i = 0; i < parameters.length; i++) {
-				try {
-					sinon.assert.match(
-						stub.args[i] as any,
-						parameters[i]);
-				} catch (error) {
-					error.name = 'MatchAssertionError';
-					error.message = `Expected call #${i} of ${
-						stub.name} to have been called with \n[${
-						parameters[i]}] but it was called with\n[${
-						stub.args[i]}]\n`;
-					throw error;
-				}
+				(chai.expect(() => sinon.assert.match(
+						stub.args[i],
+						parameters[i]
+				)).to.not.throw as Function)(undefined, /.+/,
+					`Expected call #${i} of ${
+						stub.name
+					} to have been called with \n\x1b[32m[${
+						JSON.stringify(parameters[i], undefined, ' ')
+					}]\x1b[31m\n but it was called with\n[${
+						JSON.stringify(stub.args[i], undefined, ' ')
+					}]\n`
+				);
 		}
 	
-		return assertion;
+		return chai.expect(stub);
 	});
 }
