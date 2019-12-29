@@ -1,4 +1,5 @@
 import 'chai';
+export { callsLike } from './calls-like';
 declare global {
     export namespace Chai {
         interface Assertion {
