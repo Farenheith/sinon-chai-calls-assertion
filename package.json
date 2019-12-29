@@ -11,6 +11,7 @@
   "files": [
     "build/**/*"
   ],
+  "typings": "build/sinon-chai-calls-assertion.d.ts",
   "scripts": {
     "test": "run-test",
     "lint": "run-lint",
