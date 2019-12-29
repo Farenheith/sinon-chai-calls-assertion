@@ -1,6 +1,6 @@
 {
   "name": "sinon-chai-calls-assertion",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A simple sinon-chai assertion to validate many aspects of stub calls",
   "main": "build/index.js",
   "directories": {
@@ -36,12 +36,10 @@
     "url": "https://github.com/Farenheith/sinon-chai-calls-assertion/issues"
   },
   "homepage": "https://github.com/Farenheith/sinon-chai-calls-assertion#readme",
-  "devDependencies": {
-    "base-project-config": "^1.1.0"
-  },
   "dependencies": {
+    "base-project-config": "^1.1.0",
     "chai": "^4.2.0",
-    "sinon": "^7.5.0",
-    "mocha": "^6.2.2"
+    "mocha": "^6.2.2",
+    "sinon": "^7.5.0"
   }
 }
