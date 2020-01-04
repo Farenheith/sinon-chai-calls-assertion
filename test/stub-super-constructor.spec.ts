@@ -1,5 +1,5 @@
 import * as sinon from 'sinon';
-import '../src';
+import '../src/sinon-chai-calls-assertion';
 
 import { afterEach, beforeEach, describe, it } from 'mocha';
 
@@ -40,7 +40,7 @@ describe('stub-super-constructor.ts', () => {
 
 		it('should mock super constructor', () => {
 			const stubSuper = stubSuperConstructor(Test);
-			
+
 			const target = new Test();
 
 			expect(stubSuper.calledOnce).to.be.true;
@@ -54,8 +54,8 @@ describe('stub-super-constructor.ts', () => {
 			} catch (err) {
 				error = err;
 			}
-			
-			
+
+
 			expect(error!).to.be.instanceOf(Error);
 		});
 	});

@@ -1,5 +1,5 @@
 import * as sinon from 'sinon';
-import '../src';
+import '../src/sinon-chai-calls-assertion';
 
 import { afterEach, beforeEach, describe, it } from 'mocha';
 

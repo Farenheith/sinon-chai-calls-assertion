@@ -1,4 +1,9 @@
 # sinon-chai-calls-assertion
+[![Build Status](https://travis-ci.com/Farenheith/sinon-chai-calls-assertion.svg?branch=master)](https://travis-ci.com/Farenheith/sinon-chai-calls-assertion)
+[![codecov](https://codecov.io/gh/Farenheith/sinon-chai-calls-assertion/branch/master/graph/badge.svg)](https://codecov.io/gh/Farenheith/sinon-chai-calls-assertion)
+[![Maintainability](https://api.codeclimate.com/v1/badges/786f2feef20063142467/maintainability)](https://codeclimate.com/github/Farenheith/sinon-chai-calls-assertion/maintainability)
+![](https://david-dm.org/Farenheith/sinon-chai-calls-assertion.svg)
+[![npm version](https://badge.fury.io/js/sinon-chai-calls-assertion.svg)](https://badge.fury.io/js/sinon-chai-calls-assertion)
 
 A simple assertion to validate many aspects of stub calls. It is supposed to use with sinon + chai.
 

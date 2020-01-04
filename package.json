@@ -12,13 +12,12 @@
     "build/**/*"
   ],
   "scripts": {
-    "test": "run-test",
     "lint": "run-lint",
-    "build:dev": "run-build-dev",
+    "prebuild": "run-pre-build",
     "build": "run-build",
     "test:coverage": "run-test-coverage",
     "test:coverage:lcovonly": "run-test-lcov",
-    "prepublish": "npm run build"
+    "test": "run-test"
   },
   "repository": {
     "type": "git",
@@ -37,9 +36,11 @@
   },
   "homepage": "https://github.com/Farenheith/sinon-chai-calls-assertion#readme",
   "dependencies": {
-    "base-project-config": "^1.1.0",
     "chai": "^4.2.0",
     "mocha": "^6.2.2",
     "sinon": "^7.5.0"
+  },
+  "devDependencies": {
+    "base-project-config": "^1.2.7"
   }
 }
