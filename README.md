@@ -30,13 +30,13 @@ expect(myStub).callsLike(
 If you want to check if the stub had never been called, pass just the stub:
 
 ```
-expect(myStub).callsLike;
+expect(myStub).callsLike();
 ```
 
 If you expect the stub to have been called with no parameters, pass empty arrays:
 
 ```
-expect(myStub);.callsLike([], [], [])
+expect(myStub).callsLike([], [], [])
 ```
 *(in this example, myStub have been called three times with no parameters)*
 
