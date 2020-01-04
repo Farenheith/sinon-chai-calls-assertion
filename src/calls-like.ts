@@ -1,6 +1,5 @@
 import * as chai from 'chai';
 import * as sinon from 'sinon';
-import { expectTypes } from 'chai/lib/chai/utils';
 
 export function callsLike(_chai: Chai.ChaiStatic, utils: Chai.ChaiUtils) {
 	chai.Assertion.addMethod('callsLike', function fn(this: Chai.AssertionStatic, ...parameters: object[][]) {
@@ -26,7 +25,7 @@ export function callsLike(_chai: Chai.ChaiStatic, utils: Chai.ChaiUtils) {
 					}]\n`
 				);
 		}
-	
+
 		return chai.expect(stub);
 	});
 }
