@@ -1,6 +1,6 @@
 {
   "name": "sinon-chai-calls-assertion",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "A simple sinon-chai assertion to validate many aspects of stub calls",
   "main": "build/sinon-chai-calls-assertion.js",
   "directories": {
@@ -12,6 +12,7 @@
     "build/**/*"
   ],
   "scripts": {
+		"prepublish": "npm run lint && npm run test:coverage && npm run build",
     "lint": "run-lint",
     "prebuild": "run-pre-build",
     "build": "run-build",
