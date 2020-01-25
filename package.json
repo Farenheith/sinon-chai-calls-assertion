@@ -38,10 +38,10 @@
   "homepage": "https://github.com/Farenheith/sinon-chai-calls-assertion#readme",
   "dependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.2",
     "sinon": "^7.5.0"
   },
   "devDependencies": {
+    "mocha": "^6.2.2",
     "base-project-config": "^1.2.7"
   }
 }
