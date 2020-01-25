@@ -1,5 +1,7 @@
 import '../src/sinon-chai-calls-assertion';
 import * as sinon from 'sinon';
+import '../src/sinon-chai-calls-assertion';
+
 import { expect } from 'chai';
 import * as chai from 'chai';
 import { callsLike } from '../src/calls-like';

@@ -38,7 +38,7 @@ describe('stub-super-constructor.ts', () => {
 
 		it('should mock super constructor', () => {
 			const stubSuper = stubSuperConstructor(Test);
-			
+
 			const target = new Test();
 
 			expect(stubSuper.calledOnce).to.be.true;
@@ -52,8 +52,8 @@ describe('stub-super-constructor.ts', () => {
 			} catch (err) {
 				error = err;
 			}
-			
-			
+
+
 			expect(error!).to.be.instanceOf(Error);
 		});
 	});

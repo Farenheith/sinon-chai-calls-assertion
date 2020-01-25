@@ -1,6 +1,6 @@
 {
   "name": "sinon-chai-calls-assertion",
-  "version": "1.4.2",
+  "version": "1.5.1",
   "description": "A simple sinon-chai assertion to validate many aspects of stub calls",
   "main": "build/sinon-chai-calls-assertion.js",
   "directories": {
@@ -12,13 +12,13 @@
     "build/**/*"
   ],
   "scripts": {
-    "test": "run-test",
+    "prepublish": "npm run lint && npm run test:coverage && npm run build",
     "lint": "run-lint",
-    "build:dev": "run-build-dev",
+    "prebuild": "run-pre-build",
     "build": "run-build",
     "test:coverage": "run-test-coverage",
     "test:coverage:lcovonly": "run-test-lcov",
-    "prepublish": "npm run build"
+    "test": "run-test"
   },
   "repository": {
     "type": "git",
@@ -37,9 +37,11 @@
   },
   "homepage": "https://github.com/Farenheith/sinon-chai-calls-assertion#readme",
   "dependencies": {
-    "base-project-config": "^1.1.0",
     "chai": "^4.2.0",
     "mocha": "^6.2.2",
     "sinon": "^7.5.0"
+  },
+  "devDependencies": {
+    "base-project-config": "^1.2.7"
   }
 }

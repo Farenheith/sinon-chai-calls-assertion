@@ -25,7 +25,7 @@ export function callsLike(_chai: Chai.ChaiStatic, utils: Chai.ChaiUtils) {
 					}]\n`
 				);
 		}
-	
+
 		return chai.expect(stub);
 	});
 }
