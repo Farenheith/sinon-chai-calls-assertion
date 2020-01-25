@@ -1,12 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const mocha_1 = require("mocha");
 const sinon = require("sinon");
 let cleanups = undefined;
-mocha_1.beforeEach(() => {
+beforeEach(() => {
     cleanups = [];
 });
-mocha_1.afterEach(() => {
+afterEach(() => {
     for (const cleanup of cleanups) {
         cleanup();
     }

@@ -1,4 +1,3 @@
-import { beforeEach, afterEach } from 'mocha';
 import * as sinon from 'sinon';
 
 let cleanups: Function[] | undefined = undefined;

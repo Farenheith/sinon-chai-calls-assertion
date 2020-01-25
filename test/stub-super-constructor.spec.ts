@@ -1,7 +1,5 @@
 import * as sinon from 'sinon';
-import '../src';
-
-import { afterEach, beforeEach, describe, it } from 'mocha';
+import '../src/sinon-chai-calls-assertion';
 
 import { expect } from 'chai';
 import { stubSuperConstructor } from '../src/stub-super-constructor';
