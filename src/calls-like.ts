@@ -12,10 +12,41 @@ export function callsLike(_chai: Chai.ChaiStatic, utils: Chai.ChaiUtils) {
 				} times\n`
 			);
 			for (let i = 0; i < parameters.length; i++) {
-				(chai.expect(() => sinon.assert.match(
-						stub.args[i],
-						parameters[i]
-				)).to.not.throw as Function)(undefined, /.+/,
+				(chai.expect(() => {
+					const lengthActual = stub.args[i].length;
+					const lengthExpected = parameters[i].length;
+					if (lengthActual !== lengthExpected) {
+						throw new Error(`Expected call #${i} of ${
+							stub.name
+						} to have been called with ${lengthExpected
+						} parameters but it was called with ${lengthActual
+						}`);
+					}
+					let paramErrors = '';
+					for (let j = 0; j < lengthActual; j++) {
+						if (stub.args[i][j] !== parameters[i][j]) {
+							const actual = stub.args[i];
+							const expected = parameters[i];
+							try {
+								sinon.assert.match(
+									actual,
+									expected
+								)
+							} catch {
+								paramErrors += `param ${j} as \n\x1b[32m${
+									JSON.stringify(expected)
+								}\x1b[31m\n but it was \n\x1b[32m${
+									JSON.stringify(actual)
+								}\n`;
+							}
+						}
+					}
+					if (paramErrors !== '') {
+						throw new Error(`Expected call #${i} of ${
+							stub.name
+						} to have \n${paramErrors}`);
+					}
+				}).to.not.throw as Function)(undefined, /.+/,
 					`Expected call #${i} of ${
 						stub.name
 					} to have been called with \n\x1b[32m[${
