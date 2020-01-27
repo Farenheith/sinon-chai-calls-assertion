@@ -5,6 +5,7 @@ import '../src/sinon-chai-calls-assertion';
 import { expect } from 'chai';
 import * as chai from 'chai';
 import { callsLike } from '../src/calls-like';
+import '../global';
 
 describe('expect-call', () => {
 	chai.use(callsLike);
