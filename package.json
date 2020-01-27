@@ -40,6 +40,7 @@
     "chai": "^4.2.0",
     "sinon": "^7.5.0"
   },
+  "typings": "build/sinon-chai-calls-assertion.d.ts",
   "devDependencies": {
     "mocha": "^6.2.2",
     "base-project-config": "^1.2.7"

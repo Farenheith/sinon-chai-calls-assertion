@@ -2,7 +2,7 @@ import * as chai from 'chai';
 import * as sinon from 'sinon';
 
 export function callsLike(_chai: Chai.ChaiStatic, utils: Chai.ChaiUtils) {
-	chai.Assertion.addMethod('callsLike', function fn(this: Chai.AssertionStatic, ...parameters: object[][]) {
+	utils.addMethod(_chai.Assertion.prototype, 'callsLike', function fn(this: Chai.AssertionStatic, ...parameters: object[][]) {
 		const stub: sinon.SinonStub = utils.flag(this, 'object');
 		chai.expect(stub.callCount)
 				.eq (parameters.length, `Expected ${
