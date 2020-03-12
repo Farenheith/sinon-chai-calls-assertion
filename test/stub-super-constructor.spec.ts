@@ -1,5 +1,5 @@
 import * as sinon from 'sinon';
-import '../src/sinon-chai-calls-assertion';
+import '../src/index';
 
 import { expect } from 'chai';
 import { stubSuperConstructor } from '../src/stub-super-constructor';

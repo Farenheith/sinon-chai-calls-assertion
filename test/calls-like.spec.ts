@@ -1,6 +1,5 @@
-import '../src/sinon-chai-calls-assertion';
 import * as sinon from 'sinon';
-import '../src/sinon-chai-calls-assertion';
+import '../src/index';
 
 import { expect } from 'chai';
 import * as chai from 'chai';

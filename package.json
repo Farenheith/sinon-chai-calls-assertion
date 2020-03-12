@@ -2,7 +2,7 @@
   "name": "sinon-chai-calls-assertion",
   "version": "1.5.6",
   "description": "A simple sinon-chai assertion to validate many aspects of stub calls",
-  "main": "build/sinon-chai-calls-assertion.js",
+  "main": "build/index.js",
   "directories": {
     "bin": "build",
     "test": "src",
@@ -40,7 +40,6 @@
     "chai": "^4.2.0",
     "sinon": "^7.5.0"
   },
-  "typings": "./global.d.ts",
   "devDependencies": {
     "mocha": "^6.2.2",
     "base-project-config": "^1.2.7"
