@@ -1,7 +1,3 @@
-import 'chai';
-
-export { callsLike } from './calls-like';
-export { stubSuperConstructor } from './stub-super-constructor';
 declare global {
 
 	export namespace Chai {
@@ -13,3 +9,6 @@ declare global {
 		}
 	}
 }
+
+export { callsLike } from './calls-like';
+export { stubSuperConstructor } from './stub-super-constructor';
