@@ -1,6 +1,6 @@
 {
   "name": "sinon-chai-calls-assertion",
-  "version": "1.5.7",
+  "version": "2.0.0",
   "description": "A simple sinon-chai assertion to validate many aspects of stub calls",
   "main": "build/index.js",
   "directories": {
