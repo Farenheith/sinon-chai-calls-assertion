@@ -1,11 +1,13 @@
-import { assert, match } from 'sinon';
+import { assert, match, expectation } from 'sinon';
 import Sinon = require('sinon');
 
 export function getDeepEquals({ assert }: any) {
   return function (actual: unknown, expected: unknown, j: number): string {
     let error = '';
     try {
-      assert.match(actual, expected);
+      if (actual !== expected) {
+        assert.match(actual, expected);
+      }
     } catch {
       error = `param ${j} as \n\x1b[32m${JSON.stringify(
         expected,
