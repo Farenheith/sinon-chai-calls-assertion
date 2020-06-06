@@ -2,7 +2,7 @@ import { assert, match } from 'sinon';
 import Sinon = require('sinon');
 
 export function getDeepEquals({ assert }: any) {
-  return function (actual: any[], expected: any[], j: number): string {
+  return function (actual: unknown, expected: unknown, j: number): string {
     let error = '';
     try {
       assert.match(actual, expected);
