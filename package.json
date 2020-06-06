@@ -49,14 +49,12 @@
     "url": "https://github.com/Farenheith/sinon-chai-calls-assertion/issues"
   },
   "homepage": "https://github.com/Farenheith/sinon-chai-calls-assertion#readme",
-  "dependencies": {
-    "@codibre/confs": "0.0.5"
-  },
   "devDependencies": {
     "sinon": "^9.0.1",
     "chai": "^4.2.0",
     "eslint": "^7.2.0",
     "mocha": "^7.1.0",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "@codibre/confs": "0.0.5"
   }
 }
