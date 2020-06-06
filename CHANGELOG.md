@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Next Release
 
+-v2.0.2
+
+- Testing prune to remove sinon reference from lib
+
 -v2.0.1
 
 - Including callsLikeExactly function
