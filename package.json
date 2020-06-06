@@ -19,7 +19,7 @@
     "test:coverage": "nyc npm test",
     "test:coverage:lcovonly": "run-test-lcov",
     "test": "mocha",
-    "prepare": "npm run build",
+    "prepublishOnly": "npm ci && npm run build && npm prune --production",
     "clear": "npm run clear:build && npm run clear:modules",
     "clear:build": "del-cli ./dist",
     "clear:modules": "del-cli ./node_modules",
