@@ -1,0 +1,16 @@
+{
+  "extends": "@codibre/confs/tsconfig.test.json",
+  "compilerOptions": {
+    "types": [
+      "reflect-metadata",
+      "node",
+      "mocha",
+      "chai",
+      "sinon-chai"
+    ]
+  },
+  "include": [
+    "./src",
+    "./test"
+  ]
+}

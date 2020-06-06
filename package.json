@@ -13,12 +13,26 @@
   ],
   "scripts": {
     "prepublish": "npm run lint && npm run test:coverage && npm run build",
-    "lint": "run-lint",
-    "prebuild": "run-pre-build",
-    "build": "run-build",
-    "test:coverage": "run-test-coverage",
+    "lint": "npm run lint:format && npm run lint:style",
+    "prebuild": "npm run clear:build && del-cli tsconfig.tsbuildinfo",
+    "build": "tsc",
+    "test:coverage": "nyc npm test",
     "test:coverage:lcovonly": "run-test-lcov",
-    "test": "run-test"
+    "test": "mocha",
+    "prepare": "npm run build",
+    "clear": "npm run clear:build && npm run clear:modules",
+    "clear:build": "del-cli ./dist",
+    "clear:modules": "del-cli ./node_modules",
+    "preaction:verify:update-modules": "npm run action:verify:update-modules:check",
+    "action:verify:update-modules": "npm run action:verify:update-modules:reinstall && npm run action:verify:update-modules:clean",
+    "action:verify:update-modules:clean": "del-cli .check",
+    "lint:fix": "npm run lint:format:fix && npm run lint:style:fix",
+    "lint:format": "prettier --check '{src,test}/**/*.ts'",
+    "lint:format:fix": "prettier --write '{src,test}/**/*.ts'",
+    "lint:style": "eslint '**/*.ts'",
+    "lint:style:fix": "eslint '**/*.ts' --fix",
+    "release:update-changelog": "codibre-confs update-changelog",
+    "postversion": "npm run release:update-changelog"
   },
   "repository": {
     "type": "git",
@@ -37,11 +51,13 @@
   },
   "homepage": "https://github.com/Farenheith/sinon-chai-calls-assertion#readme",
   "dependencies": {
-    "chai": "^4.2.0",
-    "sinon": "^9.0.1"
+    "@codibre/confs": "0.0.5"
   },
   "devDependencies": {
-    "base-project-config": "^2.0.8",
-    "mocha": "^7.1.0"
+    "sinon": "^9.0.1",
+    "chai": "^4.2.0",
+    "eslint": "^7.2.0",
+    "mocha": "^7.1.0",
+    "prettier": "^2.0.5"
   }
 }

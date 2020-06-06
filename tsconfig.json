@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.test.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "types": [
+      "reflect-metadata",
+      "node",
+      "mocha",
+      "chai",
+      "sinon-chai"
+    ]
+  },
+  "include": [
+    "./src"
+  ]
+}
