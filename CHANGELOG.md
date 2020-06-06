@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Next Release
 
+-v2.0.4
+
+- Fixing dependencies
+
 -v2.0.3
 
 - Creating version to pass sinon reference, making matches to work
