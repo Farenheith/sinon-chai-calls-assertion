@@ -2,14 +2,14 @@
   "name": "sinon-chai-calls-assertion",
   "version": "2.0.0",
   "description": "A simple sinon-chai assertion to validate many aspects of stub calls",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "directories": {
-    "bin": "build",
+    "bin": "dist",
     "test": "src",
     "lib": "src"
   },
   "files": [
-    "build/**/*"
+    "dist"
   ],
   "scripts": {
     "prepublish": "npm run lint && npm run test:coverage && npm run build",

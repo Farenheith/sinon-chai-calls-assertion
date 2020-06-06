@@ -63,4 +63,33 @@ describe('expect-call', () => {
       expect(result!).to.be.instanceOf(chai.Assertion);
     });
   });
+
+  describe('expect.callsLikeExactly', () => {
+    let stub: sinon.SinonStub;
+    beforeEach(() => {
+      stub = sinon.stub();
+      stub(1, '2', true);
+      stub('1', 2, false);
+    });
+
+    it('should accept both calls', () => {
+      const expectator = expect(stub);
+
+      expectator.callsLikeExactly([1, '2', true], ['1', 2, false]);
+    });
+
+    it('should reject on the first comparison', () => {
+      const expectator = expect(stub);
+      let error: Error;
+      try {
+        expectator.callsLikeExactly(
+          [1, 'sinon.match(/d/)', true],
+          ['1', sinon.match.number, sinon.match.bool],
+        );
+      } catch (err) {
+        error = err;
+      }
+      expect(error!.message).to.match(/^Expected call #0/);
+    });
+  });
 });
