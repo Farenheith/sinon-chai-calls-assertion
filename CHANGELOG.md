@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Next Release
 
--v2.0.5
+-v2.0.6
 
 - Fixing assertions I broker in later commits. Sorry :(
 
