@@ -3,12 +3,11 @@ import { SinonStub } from 'sinon';
 export function checkParametersCount(
   lengthActual: number,
   lengthExpected: number,
-  i: number,
-  stub: SinonStub,
 ) {
-  if (lengthActual !== lengthExpected) {
-    throw new Error(
-      `Expected call #${i} of ${stub.name} to have been called with ${lengthExpected} parameters but it was called with ${lengthActual}`,
-    );
-  }
+  return lengthActual !== lengthExpected
+    ? `\x1b[37m
+          Parameter count:
+            expected: \x1b[32m${lengthExpected}
+            \x1b[37m  actual: \x1b[31m${lengthActual}\n`
+    : '';
 }

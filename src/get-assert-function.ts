@@ -1,20 +1,19 @@
-import { compareParameters } from './compare-parameters';
 import { checkCallCount } from './check-call-count';
-import { checkParametersCount } from './check-parameters-count';
+import { checkCallErrors } from './check-call-errors';
 
 export function getAssertFunction(
+  _chai: Chai.ChaiStatic,
   utils: Chai.ChaiUtils,
-  compareFunc: (actual: unknown, expected: unknown, j: number) => string,
+  compareFunc: (actual: unknown, expected: unknown) => boolean,
 ) {
   return function fn(this: Chai.AssertionStatic, ...parameters: object[][]) {
     const stub: sinon.SinonStub = utils.flag(this, 'object');
-    checkCallCount(stub, parameters);
+    let errors = checkCallCount(stub, parameters);
 
-    for (let i = 0; i < parameters.length; i++) {
-      const lengthActual = stub.args[i].length;
-      const lengthExpected = parameters[i].length;
-      checkParametersCount(lengthActual, lengthExpected, i, stub);
-      compareParameters(lengthActual, stub, i, parameters, compareFunc);
+    errors += checkCallErrors(parameters, stub, compareFunc);
+
+    if (errors) {
+      _chai.assert.fail(`\x1b[37mOn \x1b[33m${stub.name}\x1b[31m${errors}`);
     }
   };
 }

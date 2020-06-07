@@ -1,71 +1,68 @@
-import * as sinon from 'sinon';
 import '../src/index';
 
 import { expect } from 'chai';
 import * as chai from 'chai';
 import { callsLike } from '../src/calls-like';
+import { match, restore, SinonStub, stub } from 'sinon';
 
 describe('expect-call', () => {
   chai.use(callsLike);
   afterEach(() => {
-    sinon.restore();
+    restore();
   });
 
   describe('expect.callsLike', () => {
-    let stub: sinon.SinonStub;
+    let myStub: SinonStub;
     beforeEach(() => {
-      stub = sinon.stub().named('myStub');
-      stub(1, '2', true);
-      stub('1', 2, false);
+      myStub = stub().named('myStub');
+      myStub(1, '2', true);
+      myStub('1', 2, false);
     });
 
     it('should reject comparison due to call count', () => {
-      const expectator = expect(stub);
+      const expectator = expect(myStub);
       let error: Error;
       try {
-        expectator.callsLike([1, sinon.match(/\d/), true]);
+        expectator.callsLike([1, match(/\d/), true]);
       } catch (err) {
         error = err;
       }
-      expect(error!.message).to.match(/^Expected myStub to have been called/);
+      expect(error!.message).to.match(/Call count/);
     });
 
     it('should accept first comparison and reject second one', () => {
-      const expectator = expect(stub);
+      const expectator = expect(myStub);
       let error: Error;
       try {
         expectator.callsLike(
-          [1, sinon.match(/\d/), true],
-          ['1', sinon.match.number, sinon.match.string],
+          [1, match(/\d/), true],
+          ['1', match.number, match.string],
         );
       } catch (err) {
         error = err;
       }
-      expect(error!.message).to.match(/^Expected call #1/);
+      expect(error!.message).to.match(/Call.+#1/);
     });
 
     it('should accept first comparison and reject second one for lack of parameters', () => {
-      const expectator = expect(stub);
+      const expectator = expect(myStub);
       let error: Error;
       try {
-        expectator.callsLike(
-          [1, sinon.match.string, true],
-          ['1', sinon.match.number],
-        );
+        expectator.callsLike([1, match.string, true], ['1', match.number]);
       } catch (err) {
         error = err;
       }
-      expect(error!.message).to.match(/^Expected call #1/);
+      expect(error!.message).to.match(/Call.+#1/);
     });
 
     it('should pass tests and return another assertion', () => {
-      const expectator = expect(stub);
+      const expectator = expect(myStub);
       let error: Error;
       let result: Chai.Assertion;
       try {
         result = expectator.callsLike(
-          [1, sinon.match.string, true],
-          ['1', sinon.match.number, sinon.match.bool],
+          [1, match.string, true],
+          ['1', match.number, match.bool],
         );
       } catch (err) {
         error = err;
@@ -73,34 +70,57 @@ describe('expect-call', () => {
       expect(error!).to.be.undefined;
       expect(result!).to.be.instanceOf(chai.Assertion);
     });
+
+    it('should give all errors', () => {
+      const expectator = expect(myStub);
+      let error: Error;
+
+      try {
+        expectator.callsLike(
+          [1, 'match(/d/)'],
+          ['1', match.number, match.string],
+          ['1', match.number, match.bool],
+        );
+      } catch (err) {
+        error = err;
+      }
+
+      expect(error!.message)
+        .to.match(/Call count/)
+        .to.match(/Parameter count/)
+        .to.match(/Parameters/);
+    });
   });
 
   describe('expect.callsLikeExactly', () => {
-    let stub: sinon.SinonStub;
+    let myStub: SinonStub;
+
     beforeEach(() => {
-      stub = sinon.stub();
-      stub(1, '2', true);
-      stub('1', 2, false);
+      myStub = stub().named('myStub');
+      myStub(1, '2', true);
+      myStub('1', 2, false);
     });
 
     it('should accept both calls', () => {
-      const expectator = expect(stub);
+      const expectator = expect(myStub);
 
       expectator.callsLikeExactly([1, '2', true], ['1', 2, false]);
     });
 
     it('should reject on the first comparison', () => {
-      const expectator = expect(stub);
+      const expectator = expect(myStub);
       let error: Error;
       try {
         expectator.callsLikeExactly(
-          [1, 'sinon.match(/d/)', true],
-          ['1', sinon.match.number, sinon.match.bool],
+          [1, 'match(/d/)', true],
+          ['1', match.number, match.bool],
         );
       } catch (err) {
         error = err;
       }
-      expect(error!.message).to.match(/^Expected call #0/);
+      expect(error!.message)
+        .to.match(/Parameters/)
+        .to.match(/Call.+#0/);
     });
   });
 });

@@ -1,7 +1,8 @@
 export function checkCallCount(stub, parameters: object[][]) {
-  if (stub.callCount !== parameters.length) {
-    throw new Error(
-      `Expected ${stub.name} to have been called ${parameters.length} times but it was called ${stub.callCount} times\n`,
-    );
-  }
+  return stub.callCount !== parameters.length
+    ? `\x1b[37m
+      Call count:
+        expected: \x1b[32m${parameters.length}
+        \x1b[37m  actual: \x1b[31m${stub.callCount}\n`
+    : '';
 }

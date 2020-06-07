@@ -6,11 +6,11 @@ export function callsLike(_chai: Chai.ChaiStatic, utils: Chai.ChaiUtils) {
   utils.addMethod(
     _chai.Assertion.prototype,
     'callsLike',
-    getAssertFunction(utils, deepEquals),
+    getAssertFunction(_chai, utils, deepEquals),
   );
   utils.addMethod(
     _chai.Assertion.prototype,
     'callsLikeExactly',
-    getAssertFunction(utils, exactlyEquals),
+    getAssertFunction(_chai, utils, exactlyEquals),
   );
 }
