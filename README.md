@@ -1,5 +1,8 @@
 # sinon-chai-calls-assertion
 
+[![Actions Status](https://github.com/Farenheith/sinon-chai-calls-assertion/workflows/build/badge.svg)](https://github.com/Farenheith/sinon-chai-calls-assertion/actions)
+[![Actions Status](https://github.com/Farenheith/sinon-chai-calls-assertion/workflows/test/badge.svg)](https://github.com/Farenheith/sinon-chai-calls-assertion/actions)
+[![Actions Status](https://github.com/Farenheith/sinon-chai-calls-assertion/workflows/lint/badge.svg)](https://github.com/Farenheith/sinon-chai-calls-assertion/actions)
 [![Build Status](https://travis-ci.com/Farenheith/sinon-chai-calls-assertion.svg?branch=master)](https://travis-ci.com/Farenheith/sinon-chai-calls-assertion)
 [![codecov](https://codecov.io/gh/Farenheith/sinon-chai-calls-assertion/branch/master/graph/badge.svg)](https://codecov.io/gh/Farenheith/sinon-chai-calls-assertion)
 [![Maintainability](https://api.codeclimate.com/v1/badges/786f2feef20063142467/maintainability)](https://codeclimate.com/github/Farenheith/sinon-chai-calls-assertion/maintainability)
