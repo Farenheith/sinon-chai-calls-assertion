@@ -1,6 +1,6 @@
 export function getAssertFunction(
   utils: Chai.ChaiUtils,
-  compareFunc: (actual: any[], expected: object[], j: number) => string,
+  compareFunc: (actual: unknown, expected: unknown, j: number) => string,
 ) {
   return function fn(this: Chai.AssertionStatic, ...parameters: object[][]) {
     const stub: sinon.SinonStub = utils.flag(this, 'object');
@@ -19,9 +19,9 @@ export function getAssertFunction(
       }
       let paramErrors = '';
       for (let j = 0; j < lengthActual; j++) {
-        const actual = stub.args[i];
-        const expected = parameters[i];
-        paramErrors = compareFunc(actual, expected, j);
+        const actual = stub.args[i][j];
+        const expected = parameters[i][j];
+        paramErrors += compareFunc(actual, expected, j);
       }
       if (paramErrors !== '') {
         throw new Error(
