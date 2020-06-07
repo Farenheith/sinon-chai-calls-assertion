@@ -26,7 +26,7 @@ jobs:
       - name: Codecov
         uses: codecov/codecov-action@v1.0.7
       - name: 'CodeClimate'
-        uses: paambaati/codeclimate-action@v2.2.4
+        uses: paambaati/codeclimate-action@v2.6.0
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
