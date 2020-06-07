@@ -9,17 +9,13 @@ export function checkCallErrors(
   let errors = '';
   const max = Math.min(parameters.length, stub.args.length);
   for (let i = 0; i < max; i++) {
-    const lengthActual = stub.args[i].length;
-    const lengthExpected = parameters[i].length;
-    let callErrors = checkParametersCount(lengthActual, lengthExpected);
-    callErrors += compareParameters(
-      lengthActual,
-      lengthExpected,
-      stub,
-      i,
-      parameters,
-      compareFunc,
+    const args = stub.args[i];
+    const expectedParameters = parameters[i];
+    let callErrors = checkParametersCount(
+      args.length,
+      expectedParameters.length,
     );
+    callErrors += compareParameters(args, expectedParameters, compareFunc);
     if (callErrors) {
       errors += `\x1b[37m
         Call \x1b[33m#${i + 1}\x1b[37m:${callErrors}`;

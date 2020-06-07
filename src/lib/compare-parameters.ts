@@ -1,19 +1,19 @@
 import { getTypeDescription } from './get-type-description';
+import { SinonStub } from 'sinon';
 
 export function compareParameters(
-  lengthActual: number,
-  lengthExpected: number,
-  stub,
-  i: number,
-  parameters: object[][],
+  args: any[],
+  parameters: object[],
   compareFunc: (actual: unknown, expected: unknown) => boolean,
 ) {
+  const lengthActual = args.length;
+  const lengthExpected = parameters.length;
   let parValues = '';
   let error = false;
   const max = Math.min(lengthActual, lengthExpected);
   for (let j = 0; j < max; j++) {
-    const actual = stub.args[i][j];
-    const expected = parameters[i][j];
+    const actual = args[j];
+    const expected = parameters[j];
     parValues += `\x1b[37m
       param \x1b[33m#${j + 1}\x1b[37m: `;
     if (compareFunc(actual, expected)) {
