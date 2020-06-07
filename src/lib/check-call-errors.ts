@@ -22,7 +22,7 @@ export function checkCallErrors(
     );
     if (callErrors) {
       errors += `\x1b[37m
-        Call \x1b[33m#${i}\x1b[37m:${callErrors}`;
+        Call \x1b[33m#${i + 1}\x1b[37m:${callErrors}`;
     }
   }
   return errors;

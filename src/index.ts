@@ -2,7 +2,7 @@ declare global {
   export namespace Chai {
     interface Assertion {
       callsLike(...parameters: unknown[][]): Assertion;
-      callsLikeExactly(...parameters: unknown[][]): Assertion;
+      callsLikeRef(...parameters: unknown[][]): Assertion;
     }
   }
 }
