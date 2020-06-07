@@ -1,4 +1,5 @@
 # sinon-chai-calls-assertion
+
 [![Build Status](https://travis-ci.com/Farenheith/sinon-chai-calls-assertion.svg?branch=master)](https://travis-ci.com/Farenheith/sinon-chai-calls-assertion)
 [![codecov](https://codecov.io/gh/Farenheith/sinon-chai-calls-assertion/branch/master/graph/badge.svg)](https://codecov.io/gh/Farenheith/sinon-chai-calls-assertion)
 [![Maintainability](https://api.codeclimate.com/v1/badges/786f2feef20063142467/maintainability)](https://codeclimate.com/github/Farenheith/sinon-chai-calls-assertion/maintainability)
@@ -12,9 +13,10 @@ A simple assertion to validate many aspects of stub calls. It is supposed to use
 ### expect(stub).callsLike
 
 Will validate the exactly interaction with the mocked method, which is:
-* How many times has been called;
-* Which parameters have been passed to it;
-* In what order the calls happened.
+
+- How many times has been called;
+- Which parameters have been passed to it;
+- In what order the calls happened.
 
 ## How to use?
 
@@ -38,7 +40,8 @@ If you expect the stub to have been called with no parameters, pass empty arrays
 ```
 expect(myStub).callsLike([], [], [])
 ```
-*(in this example, myStub have been called three times with no parameters)*
+
+_(in this example, myStub have been called three times with no parameters)_
 
 You can also use sinon matchers to validate the parameters instead of exact values:
 
@@ -47,3 +50,7 @@ expect(myStub).callsLike(
   [sinon.match.object, sinon.match.string, sinon.match(/.+foo.+goo/)]
  );
 ```
+
+The generated log will look pretty as this:
+
+![If if didn't show up, take a look in the resources folder!](./resources/example1.jpeg)
