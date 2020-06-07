@@ -11,4 +11,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: Codibre/node-build-action/build@ 
+      - uses: Codibre/node-build-action/build@0.0.1
