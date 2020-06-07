@@ -3,7 +3,7 @@
 [![Actions Status](https://github.com/Farenheith/sinon-chai-calls-assertion/workflows/build/badge.svg)](https://github.com/Farenheith/sinon-chai-calls-assertion/actions)
 [![Actions Status](https://github.com/Farenheith/sinon-chai-calls-assertion/workflows/test/badge.svg)](https://github.com/Farenheith/sinon-chai-calls-assertion/actions)
 [![Actions Status](https://github.com/Farenheith/sinon-chai-calls-assertion/workflows/lint/badge.svg)](https://github.com/Farenheith/sinon-chai-calls-assertion/actions)
-[![codecov](https://codecov.io/gh/Farenheith/sinon-chai-calls-assertion/branch/master/graph/badge.svg)](https://codecov.io/gh/Farenheith/sinon-chai-calls-assertion)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/786f2feef20063142467/test_coverage)](https://codeclimate.com/github/Farenheith/sinon-chai-calls-assertion/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/786f2feef20063142467/maintainability)](https://codeclimate.com/github/Farenheith/sinon-chai-calls-assertion/maintainability)
 [![Packages](https://david-dm.org/Farenheith/sinon-chai-calls-assertion.svg)](https://david-dm.org/Farenheith/sinon-chai-calls-assertion)
 [![npm version](https://badge.fury.io/js/sinon-chai-calls-assertion.svg)](https://badge.fury.io/js/sinon-chai-calls-assertion)
