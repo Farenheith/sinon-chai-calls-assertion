@@ -14,9 +14,20 @@ describe('expect-call', () => {
   describe('expect.callsLike', () => {
     let stub: sinon.SinonStub;
     beforeEach(() => {
-      stub = sinon.stub();
+      stub = sinon.stub().named('myStub');
       stub(1, '2', true);
       stub('1', 2, false);
+    });
+
+    it('should reject comparison due to call count', () => {
+      const expectator = expect(stub);
+      let error: Error;
+      try {
+        expectator.callsLike([1, sinon.match(/\d/), true]);
+      } catch (err) {
+        error = err;
+      }
+      expect(error!.message).to.match(/^Expected myStub to have been called/);
     });
 
     it('should accept first comparison and reject second one', () => {
