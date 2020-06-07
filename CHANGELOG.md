@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Next Release
 
+-v2.1.1
+
+- Letting parameters and call counts starting at 1
+
 -v2.1.0
 
 - Letting assertions messages much more readable!
