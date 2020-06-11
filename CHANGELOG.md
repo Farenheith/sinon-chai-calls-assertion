@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Next Release
 
+-v2.2.0
+
+- Bettering object types diff
+
 -v2.1.2
 
 - Updating used badges
