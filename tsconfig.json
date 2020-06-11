@@ -6,10 +6,8 @@
     "types": [
       "reflect-metadata",
       "node",
-      "mocha",
-      "sinon",
       "chai",
-      "sinon-chai"
+      "mocha"
     ]
   },
   "include": [

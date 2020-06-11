@@ -1,5 +1,6 @@
 import { SinonStub } from 'sinon';
 import { buildDiff } from './build-diff';
+import { ids } from './colors';
 
 export function compareParameters(
   args: any[],
@@ -14,8 +15,8 @@ export function compareParameters(
   for (let j = 0; j < max; j++) {
     const actual = args[j];
     const expected = parameters[j];
-    parValues += `\x1b[37m
-      param \x1b[33m#${j + 1}\x1b[37m: `;
+    parValues += `
+      param ${ids(`#${j + 1}`)}: `;
     if (compareFunc(actual, expected)) {
       parValues += actual;
     } else {
@@ -24,7 +25,7 @@ export function compareParameters(
     }
   }
   return error
-    ? `\x1b[37m
-          Parameters:${parValues}`
+    ? `
+    Parameters:${parValues}`
     : '';
 }

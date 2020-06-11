@@ -1,5 +1,6 @@
 import { compareParameters } from './compare-parameters';
 import { checkParametersCount } from './check-parameters-count';
+import { ids } from './colors';
 
 export function checkCallErrors(
   parameters: object[][],
@@ -17,8 +18,8 @@ export function checkCallErrors(
     );
     callErrors += compareParameters(args, expectedParameters, compareFunc);
     if (callErrors) {
-      errors += `\x1b[37m
-        Call \x1b[33m#${i + 1}\x1b[37m:${callErrors}`;
+      errors += `
+  Call ${ids(`#${i + 1}`)}:${callErrors}`;
     }
   }
   return errors;

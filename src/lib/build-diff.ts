@@ -1,10 +1,11 @@
 import { getTypeDescription } from './get-type-description';
 import { diffString } from 'json-diff';
+import { right, wrong } from './colors';
 
 function getBaseTypeDiff(expected: object, actual: any) {
   const expectedInfo = `<${getTypeDescription(expected)}>${expected}`;
   const actualInfo = `<${getTypeDescription(actual)}>${actual}`;
-  let result = `\x1b[32m${expectedInfo} \x1b[31m${actualInfo}`;
+  let result = `${right(expectedInfo)} ${wrong(actualInfo)}`;
   if (expectedInfo === actualInfo) {
     result += ' (different instances)';
   }
@@ -17,7 +18,7 @@ function isJsonComparable(value: any) {
 }
 
 function getJSONDiff(expected: object, actual: any) {
-  return diffString(expected, actual) || getBaseTypeDiff(expected, actual);
+  return diffString(actual, expected) || getBaseTypeDiff(expected, actual);
 }
 
 export function buildDiff(expected: object, actual: any) {

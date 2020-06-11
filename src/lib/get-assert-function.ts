@@ -1,5 +1,6 @@
 import { checkCallCount } from './check-call-count';
 import { checkCallErrors } from './check-call-errors';
+import { info, ids } from './colors';
 
 export function getAssertFunction(
   _chai: Chai.ChaiStatic,
@@ -13,7 +14,7 @@ export function getAssertFunction(
     errors += checkCallErrors(parameters, stub, compareFunc);
 
     if (errors) {
-      _chai.assert.fail(`\x1b[37mOn \x1b[33m${stub.name}\x1b[31m${errors}`);
+      _chai.assert.fail(info(`On ${ids(stub.name)}${errors}`));
     }
   };
 }

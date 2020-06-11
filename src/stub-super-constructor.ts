@@ -15,7 +15,7 @@ afterEach(() => {
 
 export function stubSuperConstructor<T>(cls: T) {
   if (cleanups === undefined) {
-    throw new Error("Can't use that here: put it in a beforEach or it clause");
+    throw new Error("Can't use that here: put it in a beforeEach or it clause");
   }
 
   const prototypeBackup = Object.getPrototypeOf(cls);

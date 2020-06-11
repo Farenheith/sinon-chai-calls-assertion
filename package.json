@@ -59,6 +59,7 @@
     "sinon": "^9.0.1"
   },
   "dependencies": {
+    "colors": "^1.4.0",
     "json-diff": "^0.5.4"
   }
 }
