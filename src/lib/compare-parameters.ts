@@ -1,5 +1,5 @@
-import { getTypeDescription } from './get-type-description';
 import { SinonStub } from 'sinon';
+import { buildDiff } from './build-diff';
 
 export function compareParameters(
   args: any[],
@@ -20,9 +20,7 @@ export function compareParameters(
       parValues += actual;
     } else {
       error = true;
-      parValues += `\x1b[32m<${getTypeDescription(
-        expected,
-      )}>${expected} \x1b[31m<${getTypeDescription(actual)}>${actual}`;
+      parValues += buildDiff(expected, actual);
     }
   }
   return error

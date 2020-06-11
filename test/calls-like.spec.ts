@@ -7,7 +7,9 @@ import { match, restore, SinonStub, stub } from 'sinon';
 
 describe('expect-call', () => {
   chai.use(callsLike);
-  class Test {}
+  class Test {
+    value = 1;
+  }
   const testObj = new Test();
 
   afterEach(() => {
