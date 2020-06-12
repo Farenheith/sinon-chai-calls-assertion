@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Next Release
 
+-v2.2.2
+
+- Bettering again object types. Is not the way I want it to be yet, but I'll get it someday
+
 -v2.2.1
 
 - Fixing object comparison, which got wrong colors for atual and expected
