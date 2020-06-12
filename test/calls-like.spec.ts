@@ -8,7 +8,8 @@ import { match, restore, SinonStub, stub } from 'sinon';
 describe('expect-call', () => {
   chai.use(callsLike);
   class Test {
-    value = 1;
+    value = Math.random();
+    value2 = 'test';
   }
   const testObj = new Test();
 
@@ -72,7 +73,7 @@ describe('expect-call', () => {
       try {
         result = expectator.callsLike(
           [1, match.string, true],
-          ['1', match.same(testObj), match.bool],
+          ['1', { value: match.number, value2: match.string }, match.bool],
         );
       } catch (err) {
         error = err;
@@ -88,12 +89,13 @@ describe('expect-call', () => {
       try {
         expectator.callsLike(
           [1, 'match(/d/)'],
-          ['1', match.number, match.string],
+          ['1', { value: match.number, value2: match.number }, match.bool],
           ['1', match.number, match.bool],
         );
       } catch (err) {
         error = err;
       }
+      console.log(error!.message);
 
       expect(error!.message)
         .to.match(/Call count/)

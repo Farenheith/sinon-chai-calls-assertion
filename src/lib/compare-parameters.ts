@@ -1,4 +1,3 @@
-import { SinonStub } from 'sinon';
 import { buildDiff } from './build-diff';
 import { ids } from './colors';
 

@@ -59,7 +59,9 @@
     "sinon": "^9.0.1"
   },
   "dependencies": {
+    "assert-diff": "^3.0.1",
     "colors": "^1.4.0",
-    "json-diff": "^0.5.4"
+    "json-diff": "^0.5.4",
+    "variable-diff": "^2.0.1"
   }
 }

@@ -1,6 +1,7 @@
 import { getTypeDescription } from './get-type-description';
-import { diffString } from 'json-diff';
 import { right, wrong } from './colors';
+import { removeSuccessMatchers } from './sinon-diff';
+import diff = require('variable-diff');
 
 function getBaseTypeDiff(expected: object, actual: any) {
   const expectedInfo = `<${getTypeDescription(expected)}>${expected}`;
@@ -14,11 +15,17 @@ function getBaseTypeDiff(expected: object, actual: any) {
 }
 
 function isJsonComparable(value: any) {
-  return typeof value === 'object' && Object.keys(value).length > 0;
+  return (
+    typeof value === 'object' &&
+    typeof value.test !== 'function' &&
+    Object.keys(value).length > 0
+  );
 }
 
 function getJSONDiff(expected: object, actual: any) {
-  return diffString(actual, expected) || getBaseTypeDiff(expected, actual);
+  removeSuccessMatchers(actual, expected);
+  const result = diff(actual, expected);
+  return result.changed ? result.text : getBaseTypeDiff(expected, actual);
 }
 
 export function buildDiff(expected: object, actual: any) {
