@@ -1,4 +1,6 @@
-import { getAssertFunction, deepEquals, exactlyEquals } from './lib';
+import { getAssertFunction } from './get-assert-function';
+import { deepEquals } from './deep-equals';
+import { exactlyEquals } from './exactly-equals';
 
 export function callsLike(_chai: Chai.ChaiStatic, utils: Chai.ChaiUtils) {
   utils.addMethod(

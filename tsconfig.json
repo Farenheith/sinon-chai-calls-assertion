@@ -3,6 +3,7 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
+    "sourceMap": false,
     "types": [
       "reflect-metadata",
       "node",
@@ -11,6 +12,6 @@
     ]
   },
   "include": [
-    "./src"
+    "./src", "index.ts", "index.d.ts"
   ]
 }

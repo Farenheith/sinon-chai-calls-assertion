@@ -1,4 +1,4 @@
-import { isMatcher } from '../is-matcher';
+import { isMatcher } from './is-matcher';
 
 export function getObjectDescription(obj: object) {
   if (isMatcher(obj)) {

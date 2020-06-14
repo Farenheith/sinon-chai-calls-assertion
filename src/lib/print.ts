@@ -1,5 +1,5 @@
 import { right, wrong } from './colors';
-import { isMatcher } from '../is-matcher';
+import { isMatcher } from './is-matcher';
 import { describeMatcher } from './describe-matcher';
 import { stringify } from './stringify';
 

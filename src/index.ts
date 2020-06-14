@@ -7,6 +7,6 @@ declare global {
   }
 }
 
-export { callsLike } from './calls-like';
-export { stubSuperConstructor } from './stub-super-constructor';
+export { callsLike } from './lib/calls-like';
+export { stubSuperConstructor } from './lib/stub-super-constructor';
 export { match } from 'sinon';

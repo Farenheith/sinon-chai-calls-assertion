@@ -1,5 +1,5 @@
 import { matchers } from './colors';
-import { isMatcher } from '../is-matcher';
+import { isMatcher } from './is-matcher';
 import { describeMatcher } from './describe-matcher';
 
 function validDuplicity(v: any, objects: Set<object>) {
