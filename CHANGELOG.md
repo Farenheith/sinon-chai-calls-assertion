@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Next Release
 
+-v2.2.6
+
+- Removing uneeded files from package
+
 -v2.2.5
 
 - Fixing actual expected order
