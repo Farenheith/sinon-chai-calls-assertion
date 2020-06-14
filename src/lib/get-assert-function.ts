@@ -5,7 +5,7 @@ import { info, ids } from './colors';
 export function getAssertFunction(
   _chai: Chai.ChaiStatic,
   utils: Chai.ChaiUtils,
-  compareFunc: (actual: unknown, expected: unknown) => boolean,
+  compareFunc: (actual: unknown, expected: unknown) => string,
 ) {
   return function fn(this: Chai.AssertionStatic, ...parameters: object[][]) {
     const stub: sinon.SinonStub = utils.flag(this, 'object');

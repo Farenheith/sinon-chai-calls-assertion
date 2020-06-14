@@ -1,14 +1,13 @@
-import { assert } from 'sinon';
+import { match } from './match';
+import { mustGoDeep } from './must-go-deep';
+import { compareDeep } from './compare-deep';
 
-export function deepEquals(actual: unknown, expected: unknown): boolean {
-  let result: boolean;
-  try {
-    if (actual !== expected) {
-      assert.match(actual, expected);
-    }
-    result = true;
-  } catch (err) {
-    result = false;
+export function deepEquals(actual: unknown, expected: unknown): string {
+  if (!mustGoDeep(expected, actual)) {
+    return match(expected, actual);
   }
-  return result;
+
+  const result = compareDeep(expected, actual, '  ');
+
+  return result ? `{${result}\n}` : '';
 }

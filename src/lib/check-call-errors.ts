@@ -5,7 +5,7 @@ import { ids } from './colors';
 export function checkCallErrors(
   parameters: object[][],
   stub,
-  compareFunc: (actual: unknown, expected: unknown) => boolean,
+  compareFunc: (actual: unknown, expected: unknown) => string,
 ) {
   let errors = '';
   const max = Math.min(parameters.length, stub.args.length);
