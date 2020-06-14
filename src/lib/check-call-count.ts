@@ -1,10 +1,9 @@
-import { right, wrong } from './colors';
+import { SinonStub } from 'sinon';
+import { printComparison } from './print';
 
-export function checkCallCount(stub, parameters: object[][]) {
-  return stub.callCount !== parameters.length
+export function checkCallCount(actual: SinonStub, expected: object[][]) {
+  return actual.callCount !== expected.length
     ? `
-    Call count:
-      expected: ${right(parameters.length.toString())}
-        actual: ${wrong(stub.callCount)}\n`
+    Call count: ${printComparison(actual.callCount, expected.length)}\n`
     : '';
 }

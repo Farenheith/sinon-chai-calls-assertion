@@ -18,8 +18,8 @@ export function printValue(value: any) {
   return result;
 }
 
-export function printComparison(expectedInfo: string, actualInfo: string) {
-  let result = `${right(expectedInfo)} ${wrong(actualInfo)}`;
+export function printComparison(actualInfo: unknown, expectedInfo: unknown) {
+  let result = `${wrong(actualInfo)} ${right(expectedInfo)}`;
   if (expectedInfo === actualInfo) {
     result += ' (different instances)';
   }

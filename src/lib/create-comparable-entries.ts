@@ -43,9 +43,9 @@ function getAddExpected(
   };
 }
 
-export function createComparableEntries(a: any, e: any) {
+export function createComparableEntries(actual: any, expected: any) {
   const entries = new Map();
-  Object.entries(a).forEach(getAddActual(entries));
-  Object.entries(e).forEach(getAddExpected(entries));
+  Object.entries(actual).forEach(getAddActual(entries));
+  Object.entries(expected).forEach(getAddExpected(entries));
   return entries;
 }

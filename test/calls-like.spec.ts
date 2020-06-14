@@ -84,6 +84,7 @@ describe('expect-call', () => {
       } catch (err) {
         error = err;
       }
+
       expect(error!).to.be.undefined;
       expect(result!).to.be.instanceOf(chai.Assertion);
     });

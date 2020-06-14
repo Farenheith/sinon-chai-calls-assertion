@@ -1,5 +1,4 @@
-import { SinonStub } from 'sinon';
-import { wrong, right } from './colors';
+import { printComparison } from './print';
 
 export function checkParametersCount(
   lengthActual: number,
@@ -7,8 +6,6 @@ export function checkParametersCount(
 ) {
   return lengthActual !== lengthExpected
     ? `
-          Parameter count:
-            expected: ${right(lengthExpected)}
-            actual: ${wrong(lengthActual)}\n`
+          Parameter count: ${printComparison(lengthActual, lengthExpected)}\n`
     : '';
 }

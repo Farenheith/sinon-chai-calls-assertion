@@ -1,22 +1,20 @@
 import { compareParameters } from './compare-parameters';
 import { checkParametersCount } from './check-parameters-count';
 import { ids } from './colors';
+import { SinonStub } from 'sinon';
 
 export function checkCallErrors(
-  parameters: object[][],
-  stub,
+  actualCall: SinonStub,
+  expectedCall: object[][],
   compareFunc: (actual: unknown, expected: unknown) => string,
 ) {
   let errors = '';
-  const max = Math.min(parameters.length, stub.args.length);
+  const max = Math.min(expectedCall.length, actualCall.args.length);
   for (let i = 0; i < max; i++) {
-    const args = stub.args[i];
-    const expectedParameters = parameters[i];
-    let callErrors = checkParametersCount(
-      args.length,
-      expectedParameters.length,
-    );
-    callErrors += compareParameters(args, expectedParameters, compareFunc);
+    const actual = actualCall.args[i];
+    const expected = expectedCall[i];
+    let callErrors = checkParametersCount(actual.length, expected.length);
+    callErrors += compareParameters(actual, expected, compareFunc);
     if (callErrors) {
       errors += `
   Call ${ids(`#${i + 1}`)}:${callErrors}`;
