@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Next Release
 
+-v2.2.4
+
+- Removing unused libs
+
 -v2.2.3
 
 - Finalizing betterarization of logs at all. Now is satisfying!
