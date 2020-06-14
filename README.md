@@ -55,4 +55,4 @@ expect(myStub).callsLike(
 
 The generated log will look pretty as this:
 
-![If if didn't show up, take a look in the resources folder!](./resources/example1.jpeg)
+![If if didn't show up, take a look in the resources folder!](./resources/example1.png)
