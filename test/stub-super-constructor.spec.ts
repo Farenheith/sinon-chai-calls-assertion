@@ -2,7 +2,7 @@ import * as sinon from 'sinon';
 import '../src/index';
 
 import { expect } from 'chai';
-import { stubSuperConstructor } from '../src/stub-super-constructor';
+import { stubSuperConstructor } from '../src/index';
 
 class TestBase {
   a: number;
