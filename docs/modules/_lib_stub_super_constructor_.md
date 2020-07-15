@@ -1,4 +1,4 @@
-[fluent-iterable - v2.3.0](../README.md) › ["lib/stub-super-constructor"](_lib_stub_super_constructor_.md)
+[fluent-iterable - v1.0.0](../README.md) › ["lib/stub-super-constructor"](_lib_stub_super_constructor_.md)
 
 # Module: "lib/stub-super-constructor"
 

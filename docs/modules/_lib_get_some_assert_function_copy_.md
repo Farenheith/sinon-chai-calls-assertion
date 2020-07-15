@@ -1,4 +1,4 @@
-[fluent-iterable - v2.3.0](../README.md) › ["lib/get-some-assert-function copy"](_lib_get_some_assert_function_copy_.md)
+[fluent-iterable - v1.0.0](../README.md) › ["lib/get-some-assert-function copy"](_lib_get_some_assert_function_copy_.md)
 
 # Module: "lib/get-some-assert-function copy"
 

@@ -1,4 +1,4 @@
-[fluent-iterable - v2.3.0](../README.md) › ["lib/is-json-comparable"](_lib_is_json_comparable_.md)
+[fluent-iterable - v1.0.0](../README.md) › ["lib/is-json-comparable"](_lib_is_json_comparable_.md)
 
 # Module: "lib/is-json-comparable"
 

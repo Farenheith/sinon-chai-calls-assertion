@@ -1,4 +1,4 @@
-[fluent-iterable - v2.3.0](../README.md) › ["lib/must-go-deep"](_lib_must_go_deep_.md)
+[fluent-iterable - v1.0.0](../README.md) › ["lib/must-go-deep"](_lib_must_go_deep_.md)
 
 # Module: "lib/must-go-deep"
 

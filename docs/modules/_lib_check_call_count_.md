@@ -1,4 +1,4 @@
-[fluent-iterable - v2.3.0](../README.md) › ["lib/check-call-count"](_lib_check_call_count_.md)
+[fluent-iterable - v1.0.0](../README.md) › ["lib/check-call-count"](_lib_check_call_count_.md)
 
 # Module: "lib/check-call-count"
 
