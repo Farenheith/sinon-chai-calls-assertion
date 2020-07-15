@@ -3,8 +3,8 @@
 [![Actions Status](https://github.com/Farenheith/chai-callslike/workflows/build/badge.svg)](https://github.com/Farenheith/chai-callslike/actions)
 [![Actions Status](https://github.com/Farenheith/chai-callslike/workflows/test/badge.svg)](https://github.com/Farenheith/chai-callslike/actions)
 [![Actions Status](https://github.com/Farenheith/chai-callslike/workflows/lint/badge.svg)](https://github.com/Farenheith/chai-callslike/actions)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/786f2feef20063142467/test_coverage)](https://codeclimate.com/github/Farenheith/chai-callslike/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/786f2feef20063142467/maintainability)](https://codeclimate.com/github/Farenheith/chai-callslike/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/65e41e3018643f28168e/test_coverage)](https://codeclimate.com/github/Codibre/boilerplate-base/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/65e41e3018643f28168e/maintainability)](https://codeclimate.com/github/Codibre/boilerplate-base/maintainability)
 [![Packages](https://david-dm.org/Farenheith/chai-callslike.svg)](https://david-dm.org/Farenheith/chai-callslike)
 [![npm version](https://badge.fury.io/js/chai-callslike.svg)](https://badge.fury.io/js/chai-callslike)
 
@@ -56,3 +56,5 @@ expect(myStub).callsLike(
 The generated log will look pretty as this:
 
 ![If if didn't show up, take a look in the resources folder!](./resources/example1.png)
+
+For more info look into the [Full API Reference](./docs/README.md).
