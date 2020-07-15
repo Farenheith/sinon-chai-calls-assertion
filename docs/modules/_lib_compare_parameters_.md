@@ -1,4 +1,4 @@
-[fluent-iterable - v1.1.0](../README.md) › ["lib/compare-parameters"](_lib_compare_parameters_.md)
+[fluent-iterable - v1.1.1](../README.md) › ["lib/compare-parameters"](_lib_compare_parameters_.md)
 
 # Module: "lib/compare-parameters"
 

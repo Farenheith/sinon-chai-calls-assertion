@@ -1,5 +1,8 @@
 
-## 1.1.0
+## 1.1.1
+* 28682ff updating github badges
+## v1.1.0
+* f3161a6 1.1.0
 * 2ad86ab 1.0.0
 * ba44605 preparing for version release
 * 29e138c preparing for version release

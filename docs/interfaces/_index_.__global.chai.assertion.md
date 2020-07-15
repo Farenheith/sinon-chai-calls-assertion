@@ -1,4 +1,4 @@
-[fluent-iterable - v1.1.0](../README.md) › ["index"](../modules/_index_.md) › [__global](../modules/_index_.__global.md) › [Chai](../modules/_index_.__global.chai.md) › [Assertion](_index_.__global.chai.assertion.md)
+[fluent-iterable - v1.1.1](../README.md) › ["index"](../modules/_index_.md) › [__global](../modules/_index_.__global.md) › [Chai](../modules/_index_.__global.chai.md) › [Assertion](_index_.__global.chai.assertion.md)
 
 # Interface: Assertion
 

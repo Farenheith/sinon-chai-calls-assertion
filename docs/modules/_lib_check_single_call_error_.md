@@ -1,4 +1,4 @@
-[fluent-iterable - v1.1.0](../README.md) › ["lib/check-single-call-error"](_lib_check_single_call_error_.md)
+[fluent-iterable - v1.1.1](../README.md) › ["lib/check-single-call-error"](_lib_check_single_call_error_.md)
 
 # Module: "lib/check-single-call-error"
 
