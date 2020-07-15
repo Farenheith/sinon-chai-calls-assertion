@@ -1,4 +1,4 @@
-[fluent-iterable - v1.0.0](../README.md) › ["lib/is-matcher"](_lib_is_matcher_.md)
+[fluent-iterable - v1.1.0](../README.md) › ["lib/is-matcher"](_lib_is_matcher_.md)
 
 # Module: "lib/is-matcher"
 

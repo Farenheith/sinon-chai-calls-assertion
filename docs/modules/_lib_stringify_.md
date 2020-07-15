@@ -1,4 +1,4 @@
-[fluent-iterable - v1.0.0](../README.md) › ["lib/stringify"](_lib_stringify_.md)
+[fluent-iterable - v1.1.0](../README.md) › ["lib/stringify"](_lib_stringify_.md)
 
 # Module: "lib/stringify"
 

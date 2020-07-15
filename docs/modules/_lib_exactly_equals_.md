@@ -1,4 +1,4 @@
-[fluent-iterable - v1.0.0](../README.md) › ["lib/exactly-equals"](_lib_exactly_equals_.md)
+[fluent-iterable - v1.1.0](../README.md) › ["lib/exactly-equals"](_lib_exactly_equals_.md)
 
 # Module: "lib/exactly-equals"
 

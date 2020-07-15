@@ -1,5 +1,6 @@
 
-## 1.0.0
+## 1.1.0
+* 2ad86ab 1.0.0
 * ba44605 preparing for version release
 * 29e138c preparing for version release
 * 7dc8c18 updating readme properly

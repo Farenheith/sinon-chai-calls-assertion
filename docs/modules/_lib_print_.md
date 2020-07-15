@@ -1,4 +1,4 @@
-[fluent-iterable - v1.0.0](../README.md) › ["lib/print"](_lib_print_.md)
+[fluent-iterable - v1.1.0](../README.md) › ["lib/print"](_lib_print_.md)
 
 # Module: "lib/print"
 

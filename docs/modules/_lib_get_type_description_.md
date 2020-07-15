@@ -1,4 +1,4 @@
-[fluent-iterable - v1.0.0](../README.md) › ["lib/get-type-description"](_lib_get_type_description_.md)
+[fluent-iterable - v1.1.0](../README.md) › ["lib/get-type-description"](_lib_get_type_description_.md)
 
 # Module: "lib/get-type-description"
 
