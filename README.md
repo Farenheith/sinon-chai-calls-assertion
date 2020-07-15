@@ -1,8 +1,8 @@
 # chai-callslike
 
-[![Actions Status](https://github.com/Farenheith/chai-callslike/workflows/build/badge.svg)](https://github.com/Farenheith/chai-callslike/actions)
-[![Actions Status](https://github.com/Farenheith/chai-callslike/workflows/test/badge.svg)](https://github.com/Farenheith/chai-callslike/actions)
-[![Actions Status](https://github.com/Farenheith/chai-callslike/workflows/lint/badge.svg)](https://github.com/Farenheith/chai-callslike/actions)
+![build](https://github.com/Codibre/chai-callslike/workflows/build/badge.svg)
+![test](https://github.com/Codibre/chai-callslike/workflows/test/badge.svg)
+![lint](https://github.com/Codibre/chai-callslike/workflows/lint/badge.svg)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/65e41e3018643f28168e/test_coverage)](https://codeclimate.com/github/Codibre/boilerplate-base/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/65e41e3018643f28168e/maintainability)](https://codeclimate.com/github/Codibre/boilerplate-base/maintainability)
 [![Packages](https://david-dm.org/Farenheith/chai-callslike.svg)](https://david-dm.org/Farenheith/chai-callslike)
