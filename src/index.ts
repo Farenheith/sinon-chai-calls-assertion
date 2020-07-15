@@ -27,4 +27,4 @@ declare global {
 
 export { callsLike } from './lib/calls-like';
 export { stubSuperConstructor } from './lib/stub-super-constructor';
-export { match } from 'sinon';
+export { match, stub, SinonStub, useFakeTimers } from 'sinon';

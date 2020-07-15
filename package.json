@@ -1,6 +1,6 @@
 {
-  "name": "sinon-chai-calls-assertion",
-  "version": "2.3.0",
+  "name": "chai-callslike",
+  "version": "1.0.0",
   "description": "A simple sinon-chai assertion to validate many aspects of stub calls",
   "main": "dist/index.js",
   "directories": {
@@ -12,30 +12,32 @@
     "dist"
   ],
   "scripts": {
+    "doc": "npx typedoc",
+    "format": "prettier --write src/**/*.ts tst/**/*.ts",
     "lint": "npm run lint:format && npm run lint:style",
-    "prebuild": "npm run clear:build && del-cli tsconfig.tsbuildinfo",
+    "lint:fix": "npm run lint:format:fix && npm run lint:style:fix",
     "build": "tsc",
-    "test:coverage": "nyc npm test",
-    "test:coverage:lcovonly": "run-test-lcov",
     "test": "mocha",
-    "prepublishOnly": "npm run build",
+    "test:coverage": "nyc npm test",
+    "prepublishOnly": "npm run build && npm run test:coverage",
+    "preversion": "npm run build && npm run test:coverage",
+    "version": "scripts/prepare $npm_package_version && npm run doc && git add .",
+    "postversion": "git push && git push --tags",
     "clear": "npm run clear:build && npm run clear:modules",
     "clear:build": "del-cli ./dist",
     "clear:modules": "del-cli ./node_modules",
+    "prebuild": "npm run clear:build && del-cli tsconfig.tsbuildinfo",
     "preaction:verify:update-modules": "npm run action:verify:update-modules:check",
     "action:verify:update-modules": "npm run action:verify:update-modules:reinstall && npm run action:verify:update-modules:clean",
     "action:verify:update-modules:clean": "del-cli .check",
-    "lint:fix": "npm run lint:format:fix && npm run lint:style:fix",
     "lint:format": "prettier --check '{src,test}/**/*.ts'",
     "lint:format:fix": "prettier --write '{src,test}/**/*.ts'",
     "lint:style": "eslint '**/*.ts'",
-    "lint:style:fix": "eslint '**/*.ts' --fix",
-    "release:update-changelog": "codibre-confs update-changelog",
-    "postversion": "npm run release:update-changelog"
+    "lint:style:fix": "eslint '**/*.ts' --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Farenheith/sinon-chai-calls-assertion.git"
+    "url": "git+ssh://git@github.com/Farenheith/chai-callslike.git"
   },
   "keywords": [
     "sinon",
@@ -46,18 +48,21 @@
   "author": "Farenheith",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Farenheith/sinon-chai-calls-assertion/issues"
+    "url": "https://github.com/Farenheith/chai-callslike/issues"
   },
-  "homepage": "https://github.com/Farenheith/sinon-chai-calls-assertion#readme",
+  "homepage": "https://github.com/Farenheith/chai-callslike#readme",
   "devDependencies": {
-    "@codibre/confs": "0.0.5",
+    "@codibre/confs": "0.0.6",
     "chai": "^4.2.0",
-    "eslint": "^7.2.0",
+    "eslint": "^7.4.0",
     "mocha": "^8.0.1",
     "prettier": "^2.0.5",
-    "sinon": "^9.0.1"
+    "typedoc": "^0.17.8",
+    "typedoc-plugin-markdown": "^2.3.1"
   },
   "dependencies": {
-    "colors": "^1.4.0"
+    "@types/sinon": "^9.0.4",
+    "colors": "^1.4.0",
+    "sinon": "^9.0.2"
   }
 }
