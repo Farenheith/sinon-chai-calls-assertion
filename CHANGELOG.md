@@ -1,5 +1,8 @@
 
-## 1.1.1
+## 1.1.2
+* 77f447b fixing references to github
+## v1.1.1
+* 5ac6e61 1.1.1
 * 28682ff updating github badges
 ## v1.1.0
 * f3161a6 1.1.0

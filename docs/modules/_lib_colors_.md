@@ -1,4 +1,4 @@
-[fluent-iterable - v1.1.1](../README.md) › ["lib/colors"](_lib_colors_.md)
+[fluent-iterable - v1.1.2](../README.md) › ["lib/colors"](_lib_colors_.md)
 
 # Module: "lib/colors"
 

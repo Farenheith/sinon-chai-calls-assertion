@@ -1,4 +1,4 @@
-[fluent-iterable - v1.1.1](../README.md) › ["index"](_index_.md) › [__global](_index_.__global.md)
+[fluent-iterable - v1.1.2](../README.md) › ["index"](_index_.md) › [__global](_index_.__global.md)
 
 # Namespace: __global
 
