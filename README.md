@@ -5,7 +5,7 @@
 ![lint](https://github.com/Codibre/chai-callslike/workflows/lint/badge.svg)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/65e41e3018643f28168e/test_coverage)](https://codeclimate.com/github/Codibre/boilerplate-base/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/65e41e3018643f28168e/maintainability)](https://codeclimate.com/github/Codibre/boilerplate-base/maintainability)
-[![Packages](https://david-dm.org/Farenheith/chai-callslike.svg)](https://david-dm.org/Farenheith/chai-callslike)
+[![Packages](https://david-dm.org/Codibre/chai-callslike.svg)](https://david-dm.org/Codibre/chai-callslike)
 [![npm version](https://badge.fury.io/js/chai-callslike.svg)](https://badge.fury.io/js/chai-callslike)
 
 A simple assertion to validate many aspects of stub calls. It is supposed to use with sinon + chai.

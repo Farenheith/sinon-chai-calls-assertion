@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Farenheith/chai-callslike.git"
+    "url": "git+ssh://git@github.com/Codibre/chai-callslike.git"
   },
   "keywords": [
     "sinon",
@@ -48,9 +48,9 @@
   "author": "Farenheith",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Farenheith/chai-callslike/issues"
+    "url": "https://github.com/Codibre/chai-callslike/issues"
   },
-  "homepage": "https://github.com/Farenheith/chai-callslike#readme",
+  "homepage": "https://github.com/Codibre/chai-callslike#readme",
   "devDependencies": {
     "@codibre/confs": "0.0.6",
     "chai": "^4.2.0",
