@@ -1,17 +1,17 @@
 import { assert } from 'sinon';
 import { getBaseTypeDiff } from './get-base-type-diff';
-import { expect } from 'chai';
-
+import { shouldFailOnExactCompare } from './validate-type';
 export function match(actual: unknown, expected: unknown) {
   let matchResult: boolean;
   try {
-    if (typeof actual === 'string' && typeof expected === 'string') {
-      expect(actual).to.be.eqls(expected);
-    }
-    if (actual !== expected) {
-      assert.match(actual, expected);
-    }
     matchResult = true;
+    if (actual !== expected) {
+      if (shouldFailOnExactCompare(typeof actual, typeof expected)) {
+        matchResult = false;
+      } else {
+        assert.match(actual, expected);
+      }
+    }
   } catch (err) {
     matchResult = false;
   }
