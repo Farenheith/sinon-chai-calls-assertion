@@ -3,8 +3,8 @@
 ![build](https://github.com/Codibre/chai-callslike/workflows/build/badge.svg)
 ![test](https://github.com/Codibre/chai-callslike/workflows/test/badge.svg)
 ![lint](https://github.com/Codibre/chai-callslike/workflows/lint/badge.svg)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/65e41e3018643f28168e/test_coverage)](https://codeclimate.com/github/Codibre/boilerplate-base/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/65e41e3018643f28168e/maintainability)](https://codeclimate.com/github/Codibre/boilerplate-base/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/6c13adc0df99445bc2dd/test_coverage)](https://codeclimate.com/github/Codibre/chai-callslike/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6c13adc0df99445bc2dd/maintainability)](https://codeclimate.com/github/Codibre/chai-callslike/maintainability)
 [![Packages](https://david-dm.org/Codibre/chai-callslike.svg)](https://david-dm.org/Codibre/chai-callslike)
 [![npm version](https://badge.fury.io/js/chai-callslike.svg)](https://badge.fury.io/js/chai-callslike)
 
