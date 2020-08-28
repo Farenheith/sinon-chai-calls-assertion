@@ -21,10 +21,14 @@ describe('expect-call', () => {
 
   describe('expect.callsLike', () => {
     let myStub: SinonStub;
+    let myStub2: SinonStub;
     beforeEach(() => {
       myStub = stub().named('myStub');
       myStub(1, '2', true);
       myStub('1', testObj, false);
+
+      myStub2 = stub().named('myStub2');
+      myStub2('my test');
     });
 
     it('should reject comparison due to call count', () => {
@@ -36,6 +40,30 @@ describe('expect-call', () => {
         error = err;
       }
       expect(error!.message).to.match(/Call count/);
+    });
+
+    it('should reject if first string is bigger than the second', () => {
+      const expectator = expect(myStub2);
+      let error: Error;
+      try {
+        expectator.callsLike(['test']);
+      } catch (err) {
+        error = err;
+      }
+
+      expect(error!).to.be.not.undefined;
+    });
+
+    it('should pass if first string is equal to the second', () => {
+      const expectator = expect(myStub2);
+      let error: Error;
+      try {
+        expectator.callsLike(['my test']);
+      } catch (err) {
+        error = err;
+      }
+
+      expect(error!).to.be.undefined;
     });
 
     it('should accept first comparison and reject second one', () => {
