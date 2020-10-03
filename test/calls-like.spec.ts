@@ -150,7 +150,7 @@ describe('expect-call', () => {
       try {
         expect(() => true).to.have.callsLike(['params']);
       } catch (err) {
-         error = err;
+        error = err;
       }
 
       expect(error.message).to.match(/Not a stub!.*/);
@@ -271,7 +271,7 @@ describe('expect-call', () => {
       try {
         expect(() => true).to.have.someCallsLike(['params']);
       } catch (err) {
-         error = err;
+        error = err;
       }
 
       expect(error.message).to.match(/Not a stub!.*/);
