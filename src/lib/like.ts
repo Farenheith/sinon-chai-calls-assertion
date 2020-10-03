@@ -1,4 +1,4 @@
-import { checkSomeCallsError } from './check-some-calls-error';
+import { info } from './colors';
 import { deepEquals } from './deep-equals';
 
 export function like(_chai: Chai.ChaiStatic, utils: Chai.ChaiUtils) {
@@ -8,7 +8,7 @@ export function like(_chai: Chai.ChaiStatic, utils: Chai.ChaiUtils) {
     const errors = deepEquals(actualCalls, expectedValue);
 
     if (errors) {
-      _chai.assert.fail(errors);
+      _chai.assert.fail(info(`Value's not like the expected: ${errors}`));
     }
   };
 }
