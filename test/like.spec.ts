@@ -17,6 +17,6 @@ describe('like', () => {
   });
 
   it('should works with match.has', () => {
-    expect({ a: 1, b: 2}).to.be.like(match.has('a', 1));
+    expect({ a: 1, b: 2 }).to.be.like(match.has('a', 1));
   });
 });
