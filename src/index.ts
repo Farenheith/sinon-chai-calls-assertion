@@ -21,6 +21,11 @@ declare global {
        * @param parameters Combination of parameters. Each array is a different call
        */
       someCallsLikeRef(...parameters: unknown[][]): Assertion;
+      /**
+       * Check if a certain value is deep equal to another
+       * @param expectedValue The expected value
+       */
+      like(expectedValue: unknown): Assertion;
     }
   }
 }
