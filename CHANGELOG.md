@@ -1,5 +1,18 @@
 
-## 1.1.2
+## 1.2.0
+* da204bf Merge pull request #7 from Codibre/issue-4-expose_object_compare_function
+* f86b20e adding phrase to assertion message
+* 08678ac fixing lint
+* 2c2f501 adding test case
+* dad08eb creating like method
+* 58f9b56 Merge pull request #5 from Codibre/issue-1-String_assertion_passing_with_partial_string
+* 5706c54 fixing readme and flag
+* a99bbb8 fixing some things
+* 96fbfb2 fixing implementation with shouldFailOnExactCompare
+* 8cac670 fixing new assertion
+* fe4c355 Update README.md
+## v1.1.2
+* 582ef93 1.1.2
 * 77f447b fixing references to github
 ## v1.1.1
 * 5ac6e61 1.1.1

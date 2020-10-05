@@ -1,4 +1,4 @@
-[fluent-iterable - v1.1.2](../README.md) › ["lib/calls-like"](_lib_calls_like_.md)
+[fluent-iterable - v1.2.0](../README.md) › ["lib/calls-like"](_lib_calls_like_.md)
 
 # Module: "lib/calls-like"
 

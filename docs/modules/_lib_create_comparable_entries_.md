@@ -1,4 +1,4 @@
-[fluent-iterable - v1.1.2](../README.md) › ["lib/create-comparable-entries"](_lib_create_comparable_entries_.md)
+[fluent-iterable - v1.2.0](../README.md) › ["lib/create-comparable-entries"](_lib_create_comparable_entries_.md)
 
 # Module: "lib/create-comparable-entries"
 

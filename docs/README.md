@@ -1,6 +1,6 @@
-[fluent-iterable - v1.1.2](README.md)
+[fluent-iterable - v1.2.0](README.md)
 
-# fluent-iterable - v1.1.2
+# fluent-iterable - v1.2.0
 
 ## Index
 
@@ -23,12 +23,15 @@
 * ["lib/get-assert-function"](modules/_lib_get_assert_function_.md)
 * ["lib/get-base-type-diff"](modules/_lib_get_base_type_diff_.md)
 * ["lib/get-object-description"](modules/_lib_get_object_description_.md)
-* ["lib/get-some-assert-function copy"](modules/_lib_get_some_assert_function_copy_.md)
+* ["lib/get-some-assert-function"](modules/_lib_get_some_assert_function_.md)
 * ["lib/get-type-description"](modules/_lib_get_type_description_.md)
 * ["lib/is-json-comparable"](modules/_lib_is_json_comparable_.md)
 * ["lib/is-matcher"](modules/_lib_is_matcher_.md)
+* ["lib/is-stub"](modules/_lib_is_stub_.md)
+* ["lib/like"](modules/_lib_like_.md)
 * ["lib/match"](modules/_lib_match_.md)
 * ["lib/must-go-deep"](modules/_lib_must_go_deep_.md)
 * ["lib/print"](modules/_lib_print_.md)
 * ["lib/stringify"](modules/_lib_stringify_.md)
 * ["lib/stub-super-constructor"](modules/_lib_stub_super_constructor_.md)
+* ["lib/validate-type"](modules/_lib_validate_type_.md)

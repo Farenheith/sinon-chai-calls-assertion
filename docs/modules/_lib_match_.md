@@ -1,4 +1,4 @@
-[fluent-iterable - v1.1.2](../README.md) › ["lib/match"](_lib_match_.md)
+[fluent-iterable - v1.2.0](../README.md) › ["lib/match"](_lib_match_.md)
 
 # Module: "lib/match"
 
