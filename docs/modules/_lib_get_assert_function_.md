@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.2](../README.md) › ["lib/get-assert-function"](_lib_get_assert_function_.md)
+[chai-callslike - v1.2.2](../README.md) › ["lib/get-assert-function"](_lib_get_assert_function_.md)
 
 # Module: "lib/get-assert-function"
 

@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.2](../README.md) › ["lib/is-matcher"](_lib_is_matcher_.md)
+[chai-callslike - v1.2.2](../README.md) › ["lib/is-matcher"](_lib_is_matcher_.md)
 
 # Module: "lib/is-matcher"
 

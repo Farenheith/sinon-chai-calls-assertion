@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.2](../README.md) › ["lib/compare-parameters"](_lib_compare_parameters_.md)
+[chai-callslike - v1.2.2](../README.md) › ["lib/compare-parameters"](_lib_compare_parameters_.md)
 
 # Module: "lib/compare-parameters"
 

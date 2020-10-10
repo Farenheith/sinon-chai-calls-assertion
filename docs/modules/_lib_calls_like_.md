@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.2](../README.md) › ["lib/calls-like"](_lib_calls_like_.md)
+[chai-callslike - v1.2.2](../README.md) › ["lib/calls-like"](_lib_calls_like_.md)
 
 # Module: "lib/calls-like"
 

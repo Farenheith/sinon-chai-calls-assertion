@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.2](../README.md) › ["lib/fail"](_lib_fail_.md)
+[chai-callslike - v1.2.2](../README.md) › ["lib/fail"](_lib_fail_.md)
 
 # Module: "lib/fail"
 

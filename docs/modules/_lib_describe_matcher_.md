@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.2](../README.md) › ["lib/describe-matcher"](_lib_describe_matcher_.md)
+[chai-callslike - v1.2.2](../README.md) › ["lib/describe-matcher"](_lib_describe_matcher_.md)
 
 # Module: "lib/describe-matcher"
 
