@@ -1,7 +1,6 @@
 import { checkCallCount } from './check-call-count';
 import { info, ids } from './colors';
 import { checkSomeCallsError } from './check-some-calls-error';
-import { fail } from './fail';
 
 export function getSomeAssertFunction(
   _chai: Chai.ChaiStatic,
@@ -14,7 +13,7 @@ export function getSomeAssertFunction(
     const errors = checkSomeCallsError(actualCalls, expectedCalls, compareFunc);
 
     if (errors) {
-      fail(_chai, info(`On ${ids(actualCalls.name)}${errors}`));
+      _chai.assert.fail(info(`On ${ids(actualCalls.name)}${errors}`));
     }
   };
 }

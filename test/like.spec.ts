@@ -1,5 +1,7 @@
 import { match } from 'sinon';
 import { expect } from 'chai';
+import '../src';
+
 describe('like', () => {
   it('should throw error on deep inequality', () => {
     let error: any;
