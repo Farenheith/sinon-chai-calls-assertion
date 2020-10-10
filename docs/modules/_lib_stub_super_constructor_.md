@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.1](../README.md) › ["lib/stub-super-constructor"](_lib_stub_super_constructor_.md)
+[chai-callslike - v1.2.2](../README.md) › ["lib/stub-super-constructor"](_lib_stub_super_constructor_.md)
 
 # Module: "lib/stub-super-constructor"
 

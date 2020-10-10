@@ -4,7 +4,7 @@
   "theme": "markdown",
   "out": "docs",
   "readme": "none",
-  "name": "fluent-iterable",
+  "name": "chai-callslike",
   "includeVersion": true,
   "disableSources": true,
   "exclude": [

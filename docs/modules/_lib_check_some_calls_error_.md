@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.1](../README.md) › ["lib/check-some-calls-error"](_lib_check_some_calls_error_.md)
+[chai-callslike - v1.2.2](../README.md) › ["lib/check-some-calls-error"](_lib_check_some_calls_error_.md)
 
 # Module: "lib/check-some-calls-error"
 

@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.1](../README.md) › ["lib/is-json-comparable"](_lib_is_json_comparable_.md)
+[chai-callslike - v1.2.2](../README.md) › ["lib/is-json-comparable"](_lib_is_json_comparable_.md)
 
 # Module: "lib/is-json-comparable"
 
