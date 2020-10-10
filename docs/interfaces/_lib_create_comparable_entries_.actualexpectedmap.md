@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.0](../README.md) › ["lib/create-comparable-entries"](../modules/_lib_create_comparable_entries_.md) › [ActualExpectedMap](_lib_create_comparable_entries_.actualexpectedmap.md)
+[fluent-iterable - v1.2.1](../README.md) › ["lib/create-comparable-entries"](../modules/_lib_create_comparable_entries_.md) › [ActualExpectedMap](_lib_create_comparable_entries_.actualexpectedmap.md)
 
 # Interface: ActualExpectedMap
 

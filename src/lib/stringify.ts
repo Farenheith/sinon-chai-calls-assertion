@@ -22,5 +22,5 @@ export function stringify(value: unknown): string {
   const objects = new Set<object>();
   const result = JSON.stringify(value, stringifyEntry(objects));
 
-  return result.replace(/\"?\\u001b\[(\d+)m\"?/g, '\u001b[$1m');
+  return result || matchers('undefined');
 }

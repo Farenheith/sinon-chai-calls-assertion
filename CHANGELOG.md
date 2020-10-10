@@ -1,5 +1,17 @@
 
-## 1.2.0
+## 1.2.1
+* 0c35fa3 fixing undefined comparison
+* c9f7ea9 Merge pull request #9 from Codibre/new-release
+* 05a6bf7 fixing publish yml
+* 10e4d5c Merge pull request #8 from Codibre/new-release
+* 97a3975 updating docs"
+* 4183af7 Merge branch 'master' of github.com:Codibre/chai-callslike into new-release
+* 1f7c5c7 Merge pull request #6 from Codibre/issue-2-testing_non_stub_throws_an_untreated_error
+* 69e9186 Merge branch 'master' of github.com:Codibre/chai-callslike into issue-2-testing_non_stub_throws_an_untreated_error
+* f87210d fixing lint
+* 6ffd7d4 checking if is stub
+## v1.2.0
+* c90dac6 1.2.0
 * da204bf Merge pull request #7 from Codibre/issue-4-expose_object_compare_function
 * f86b20e adding phrase to assertion message
 * 08678ac fixing lint

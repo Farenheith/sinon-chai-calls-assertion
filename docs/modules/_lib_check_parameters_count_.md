@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.0](../README.md) › ["lib/check-parameters-count"](_lib_check_parameters_count_.md)
+[fluent-iterable - v1.2.1](../README.md) › ["lib/check-parameters-count"](_lib_check_parameters_count_.md)
 
 # Module: "lib/check-parameters-count"
 

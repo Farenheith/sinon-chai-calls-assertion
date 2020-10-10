@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.0](../README.md) › ["lib/get-base-type-diff"](_lib_get_base_type_diff_.md)
+[fluent-iterable - v1.2.1](../README.md) › ["lib/get-base-type-diff"](_lib_get_base_type_diff_.md)
 
 # Module: "lib/get-base-type-diff"
 
