@@ -1,6 +1,6 @@
-[fluent-iterable - v1.2.1](README.md)
+[fluent-iterable - v1.2.2](README.md)
 
-# fluent-iterable - v1.2.1
+# fluent-iterable - v1.2.2
 
 ## Index
 
@@ -20,6 +20,7 @@
 * ["lib/deep-equals"](modules/_lib_deep_equals_.md)
 * ["lib/describe-matcher"](modules/_lib_describe_matcher_.md)
 * ["lib/exactly-equals"](modules/_lib_exactly_equals_.md)
+* ["lib/fail"](modules/_lib_fail_.md)
 * ["lib/get-assert-function"](modules/_lib_get_assert_function_.md)
 * ["lib/get-base-type-diff"](modules/_lib_get_base_type_diff_.md)
 * ["lib/get-object-description"](modules/_lib_get_object_description_.md)

@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.1](../README.md) › ["lib/get-object-description"](_lib_get_object_description_.md)
+[fluent-iterable - v1.2.2](../README.md) › ["lib/get-object-description"](_lib_get_object_description_.md)
 
 # Module: "lib/get-object-description"
 

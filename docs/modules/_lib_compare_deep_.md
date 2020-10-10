@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.1](../README.md) › ["lib/compare-deep"](_lib_compare_deep_.md)
+[fluent-iterable - v1.2.2](../README.md) › ["lib/compare-deep"](_lib_compare_deep_.md)
 
 # Module: "lib/compare-deep"
 

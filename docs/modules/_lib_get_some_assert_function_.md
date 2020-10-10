@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.1](../README.md) › ["lib/get-some-assert-function"](_lib_get_some_assert_function_.md)
+[fluent-iterable - v1.2.2](../README.md) › ["lib/get-some-assert-function"](_lib_get_some_assert_function_.md)
 
 # Module: "lib/get-some-assert-function"
 
