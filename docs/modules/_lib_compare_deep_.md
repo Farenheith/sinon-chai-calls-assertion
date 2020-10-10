@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.2](../README.md) › ["lib/compare-deep"](_lib_compare_deep_.md)
+[chai-callslike - v1.2.3](../README.md) › ["lib/compare-deep"](_lib_compare_deep_.md)
 
 # Module: "lib/compare-deep"
 

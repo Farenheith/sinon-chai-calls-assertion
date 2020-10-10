@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.2](../README.md) › ["lib/colors"](_lib_colors_.md)
+[chai-callslike - v1.2.3](../README.md) › ["lib/colors"](_lib_colors_.md)
 
 # Module: "lib/colors"
 
