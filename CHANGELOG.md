@@ -1,5 +1,9 @@
 
-## 1.2.2
+## 1.2.3
+* 56203da undoing stack change
+* 13ea24d fixing doc
+## v1.2.2
+* 08763c0 1.2.2
 * 40ea915 bettering call stack
 ## v1.2.1
 * 28b7d6d 1.2.1

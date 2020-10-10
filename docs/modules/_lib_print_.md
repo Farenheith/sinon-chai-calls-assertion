@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.2](../README.md) › ["lib/print"](_lib_print_.md)
+[chai-callslike - v1.2.3](../README.md) › ["lib/print"](_lib_print_.md)
 
 # Module: "lib/print"
 

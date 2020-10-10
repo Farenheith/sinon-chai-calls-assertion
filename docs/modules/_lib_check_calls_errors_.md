@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.2](../README.md) › ["lib/check-calls-errors"](_lib_check_calls_errors_.md)
+[chai-callslike - v1.2.3](../README.md) › ["lib/check-calls-errors"](_lib_check_calls_errors_.md)
 
 # Module: "lib/check-calls-errors"
 

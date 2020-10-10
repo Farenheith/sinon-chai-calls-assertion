@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.2](../README.md) › ["lib/create-comparable-entries"](_lib_create_comparable_entries_.md)
+[chai-callslike - v1.2.3](../README.md) › ["lib/create-comparable-entries"](_lib_create_comparable_entries_.md)
 
 # Module: "lib/create-comparable-entries"
 

@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.2](../README.md) › ["index"](_index_.md)
+[chai-callslike - v1.2.3](../README.md) › ["index"](_index_.md)
 
 # Module: "index"
 
