@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.0](../README.md) › ["lib/deep-equals"](_lib_deep_equals_.md)
+[fluent-iterable - v1.2.1](../README.md) › ["lib/deep-equals"](_lib_deep_equals_.md)
 
 # Module: "lib/deep-equals"
 

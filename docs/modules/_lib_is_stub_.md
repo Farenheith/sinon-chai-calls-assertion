@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.0](../README.md) › ["lib/is-stub"](_lib_is_stub_.md)
+[fluent-iterable - v1.2.1](../README.md) › ["lib/is-stub"](_lib_is_stub_.md)
 
 # Module: "lib/is-stub"
 

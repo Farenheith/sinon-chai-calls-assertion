@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.0](../README.md) › ["lib/like"](_lib_like_.md)
+[fluent-iterable - v1.2.1](../README.md) › ["lib/like"](_lib_like_.md)
 
 # Module: "lib/like"
 

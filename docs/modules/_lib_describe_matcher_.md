@@ -1,4 +1,4 @@
-[fluent-iterable - v1.2.0](../README.md) › ["lib/describe-matcher"](_lib_describe_matcher_.md)
+[fluent-iterable - v1.2.1](../README.md) › ["lib/describe-matcher"](_lib_describe_matcher_.md)
 
 # Module: "lib/describe-matcher"
 
