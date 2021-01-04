@@ -1,12 +1,12 @@
-# sinon-chai-calls-assertion
+# chai-callslike
 
-[![Actions Status](https://github.com/Farenheith/sinon-chai-calls-assertion/workflows/build/badge.svg)](https://github.com/Farenheith/sinon-chai-calls-assertion/actions)
-[![Actions Status](https://github.com/Farenheith/sinon-chai-calls-assertion/workflows/test/badge.svg)](https://github.com/Farenheith/sinon-chai-calls-assertion/actions)
-[![Actions Status](https://github.com/Farenheith/sinon-chai-calls-assertion/workflows/lint/badge.svg)](https://github.com/Farenheith/sinon-chai-calls-assertion/actions)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/786f2feef20063142467/test_coverage)](https://codeclimate.com/github/Farenheith/sinon-chai-calls-assertion/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/786f2feef20063142467/maintainability)](https://codeclimate.com/github/Farenheith/sinon-chai-calls-assertion/maintainability)
-[![Packages](https://david-dm.org/Farenheith/sinon-chai-calls-assertion.svg)](https://david-dm.org/Farenheith/sinon-chai-calls-assertion)
-[![npm version](https://badge.fury.io/js/sinon-chai-calls-assertion.svg)](https://badge.fury.io/js/sinon-chai-calls-assertion)
+![build](https://github.com/Codibre/chai-callslike/workflows/build/badge.svg)
+![test](https://github.com/Codibre/chai-callslike/workflows/test/badge.svg)
+![lint](https://github.com/Codibre/chai-callslike/workflows/lint/badge.svg)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/6c13adc0df99445bc2dd/test_coverage)](https://codeclimate.com/github/Codibre/chai-callslike/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6c13adc0df99445bc2dd/maintainability)](https://codeclimate.com/github/Codibre/chai-callslike/maintainability)
+[![Packages](https://david-dm.org/Codibre/chai-callslike.svg)](https://david-dm.org/Codibre/chai-callslike)
+[![npm version](https://badge.fury.io/js/chai-callslike.svg)](https://badge.fury.io/js/chai-callslike)
 
 A simple assertion to validate many aspects of stub calls. It is supposed to use with sinon + chai.
 
@@ -56,3 +56,5 @@ expect(myStub).callsLike(
 The generated log will look pretty as this:
 
 ![If if didn't show up, take a look in the resources folder!](./resources/example1.png)
+
+For more info look into the [Full API Reference](./docs/README.md).
