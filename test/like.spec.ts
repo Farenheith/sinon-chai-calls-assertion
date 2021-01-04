@@ -33,4 +33,14 @@ describe('like', () => {
 
     expect(error.message).to.match(/Value's not like the expected.+/);
   });
+
+  it('should fail when checking non-empty object with a empty object', () => {
+    let error = null;
+    try {
+      expect({ foo: 'bar' }).to.be.like({});
+    } catch (ex) {
+      error = ex;
+    }
+    expect(error).to.not.be.equal(null);
+  });
 });
