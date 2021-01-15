@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.3](../README.md) › ["lib/get-object-description"](_lib_get_object_description_.md)
+[chai-callslike - v1.2.4](../README.md) › ["lib/get-object-description"](_lib_get_object_description_.md)
 
 # Module: "lib/get-object-description"
 

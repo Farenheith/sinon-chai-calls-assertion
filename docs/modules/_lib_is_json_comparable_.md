@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.3](../README.md) › ["lib/is-json-comparable"](_lib_is_json_comparable_.md)
+[chai-callslike - v1.2.4](../README.md) › ["lib/is-json-comparable"](_lib_is_json_comparable_.md)
 
 # Module: "lib/is-json-comparable"
 

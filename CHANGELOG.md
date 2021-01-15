@@ -1,5 +1,11 @@
 
-## 1.2.3
+## 1.2.4
+* 544d47a fixing null comparing
+* d0f4a34 Merge pull request #13 from Codibre/issue-10-Errpr_when_comparing_to_undefined
+* 3be0212 Merge pull request #12 from Codibre/issue-10-Errpr_when_comparing_to_undefined
+* 3efabd8 Merge pull request #11 from Codibre/issue-10-Errpr_when_comparing_to_undefined
+## v1.2.3
+* 1f867a7 1.2.3
 * 56203da undoing stack change
 * 13ea24d fixing doc
 ## v1.2.2

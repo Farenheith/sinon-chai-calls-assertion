@@ -33,4 +33,8 @@ describe('like', () => {
 
     expect(error.message).to.match(/Value's not like the expected.+/);
   });
+
+  it('should pass properly comparing a null value with null', () => {
+    expect(null).to.have.like(null);
+  });
 });
