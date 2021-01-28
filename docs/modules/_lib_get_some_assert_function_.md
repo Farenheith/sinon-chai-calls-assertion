@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.3](../README.md) › ["lib/get-some-assert-function"](_lib_get_some_assert_function_.md)
+[chai-callslike - v1.2.4](../README.md) › ["lib/get-some-assert-function"](_lib_get_some_assert_function_.md)
 
 # Module: "lib/get-some-assert-function"
 

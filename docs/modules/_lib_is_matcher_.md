@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.3](../README.md) › ["lib/is-matcher"](_lib_is_matcher_.md)
+[chai-callslike - v1.2.4](../README.md) › ["lib/is-matcher"](_lib_is_matcher_.md)
 
 # Module: "lib/is-matcher"
 
@@ -12,12 +12,12 @@
 
 ###  isMatcher
 
-▸ **isMatcher**(`obj`: object): *boolean*
+▸ **isMatcher**(`obj`: unknown): *boolean*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`obj` | object |
+`obj` | unknown |
 
 **Returns:** *boolean*

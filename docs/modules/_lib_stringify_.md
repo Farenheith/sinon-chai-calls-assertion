@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.3](../README.md) › ["lib/stringify"](_lib_stringify_.md)
+[chai-callslike - v1.2.4](../README.md) › ["lib/stringify"](_lib_stringify_.md)
 
 # Module: "lib/stringify"
 
