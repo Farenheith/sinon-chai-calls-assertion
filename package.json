@@ -1,6 +1,6 @@
 {
   "name": "chai-callslike",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "A simple sinon-chai assertion to validate many aspects of stub calls",
   "main": "dist/index.js",
   "directories": {

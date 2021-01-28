@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.4](../README.md) › ["lib/deep-equals"](_lib_deep_equals_.md)
+[chai-callslike - v1.2.5](../README.md) › ["lib/deep-equals"](_lib_deep_equals_.md)
 
 # Module: "lib/deep-equals"
 

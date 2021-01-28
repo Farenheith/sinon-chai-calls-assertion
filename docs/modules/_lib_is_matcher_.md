@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.4](../README.md) › ["lib/is-matcher"](_lib_is_matcher_.md)
+[chai-callslike - v1.2.5](../README.md) › ["lib/is-matcher"](_lib_is_matcher_.md)
 
 # Module: "lib/is-matcher"
 

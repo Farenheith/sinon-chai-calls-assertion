@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.4](../README.md) › ["lib/create-comparable-entries"](../modules/_lib_create_comparable_entries_.md) › [ActualExpectedMap](_lib_create_comparable_entries_.actualexpectedmap.md)
+[chai-callslike - v1.2.5](../README.md) › ["lib/create-comparable-entries"](../modules/_lib_create_comparable_entries_.md) › [ActualExpectedMap](_lib_create_comparable_entries_.actualexpectedmap.md)
 
 # Interface: ActualExpectedMap
 
