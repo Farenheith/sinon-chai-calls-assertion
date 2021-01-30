@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.4](../README.md) › ["lib/get-base-type-diff"](_lib_get_base_type_diff_.md)
+[chai-callslike - v1.2.5](../README.md) › ["lib/get-base-type-diff"](_lib_get_base_type_diff_.md)
 
 # Module: "lib/get-base-type-diff"
 

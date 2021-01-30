@@ -1,5 +1,6 @@
 import { assert } from 'sinon';
 import { getBaseTypeDiff } from './get-base-type-diff';
+import { isMatcher } from './is-matcher';
 import { shouldFailOnExactCompare } from './validate-type';
 export function match(actual: unknown, expected: unknown) {
   let matchResult: boolean = true;
@@ -9,6 +10,9 @@ export function match(actual: unknown, expected: unknown) {
         matchResult = false;
       } else {
         assert.match(actual, expected);
+        if (!isMatcher(expected)) {
+          assert.match(expected, actual);
+        }
       }
     }
   } catch (err) {

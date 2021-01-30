@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.4](../README.md) › ["lib/stub-super-constructor"](_lib_stub_super_constructor_.md)
+[chai-callslike - v1.2.5](../README.md) › ["lib/stub-super-constructor"](_lib_stub_super_constructor_.md)
 
 # Module: "lib/stub-super-constructor"
 

@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.4](../README.md) › ["lib/compare-deep"](_lib_compare_deep_.md)
+[chai-callslike - v1.2.5](../README.md) › ["lib/compare-deep"](_lib_compare_deep_.md)
 
 # Module: "lib/compare-deep"
 
@@ -12,7 +12,7 @@
 
 ###  compareDeep
 
-▸ **compareDeep**(`actual`: any, `expected`: any, `tab`: string): *string*
+▸ **compareDeep**(`actual`: any, `expected`: any, `tab`: string, `references`: Set‹unknown›): *string*
 
 **Parameters:**
 
@@ -21,5 +21,6 @@ Name | Type |
 `actual` | any |
 `expected` | any |
 `tab` | string |
+`references` | Set‹unknown› |
 
 **Returns:** *string*

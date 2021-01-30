@@ -1,5 +1,15 @@
 
-## 1.2.4
+## 1.2.5
+* 4a99baf fixing recursive object comparing
+* 2e53202 undoing dependency change
+* 501b019 fixing dependencies
+* 9299ba7 1.2.5
+* 6a911c5 Merge branch 'master' of github.com:Codibre/chai-callslike into issue-18-Asserting_an_recursive_object_throws_and_error
+* 61e1fec 1.2.4
+* ab37ba3 fixing empty object comparison
+* a6490db Issue 14 is json comparable fails if value is null (#17)
+## v1.2.4
+* 24c43ac 1.2.4
 * 544d47a fixing null comparing
 * d0f4a34 Merge pull request #13 from Codibre/issue-10-Errpr_when_comparing_to_undefined
 * 3be0212 Merge pull request #12 from Codibre/issue-10-Errpr_when_comparing_to_undefined

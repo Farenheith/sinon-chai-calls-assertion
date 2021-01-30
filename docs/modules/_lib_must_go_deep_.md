@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.4](../README.md) › ["lib/must-go-deep"](_lib_must_go_deep_.md)
+[chai-callslike - v1.2.5](../README.md) › ["lib/must-go-deep"](_lib_must_go_deep_.md)
 
 # Module: "lib/must-go-deep"
 
@@ -12,7 +12,7 @@
 
 ###  mustGoDeep
 
-▸ **mustGoDeep**(`a`: unknown, `e`: unknown): *boolean*
+▸ **mustGoDeep**(`a`: unknown, `e`: unknown, `references`: Set‹unknown›): *boolean*
 
 **Parameters:**
 
@@ -20,5 +20,6 @@ Name | Type |
 ------ | ------ |
 `a` | unknown |
 `e` | unknown |
+`references` | Set‹unknown› |
 
 **Returns:** *boolean*
