@@ -3,11 +3,6 @@
   "version": "1.2.5",
   "description": "A simple sinon-chai assertion to validate many aspects of stub calls",
   "main": "dist/index.js",
-  "directories": {
-    "bin": "dist",
-    "test": "src",
-    "lib": "src"
-  },
   "files": [
     "dist"
   ],
@@ -33,7 +28,8 @@
     "lint:format": "prettier --check '{src,test}/**/*.ts'",
     "lint:format:fix": "prettier --write '{src,test}/**/*.ts'",
     "lint:style": "eslint '**/*.ts'",
-    "lint:style:fix": "eslint '**/*.ts' --fix"
+    "lint:style:fix": "eslint '**/*.ts' --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -55,6 +51,7 @@
     "@codibre/confs": "0.0.6",
     "chai": "^4.2.0",
     "eslint": "^7.4.0",
+    "husky": "^6.0.0",
     "mocha": "^8.0.1",
     "prettier": "^2.0.5",
     "typedoc": "^0.17.8",
