@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.5](../README.md) › ["lib/calls-like"](_lib_calls_like_.md)
+[chai-callslike - v1.2.6](../README.md) › ["lib/calls-like"](_lib_calls_like_.md)
 
 # Module: "lib/calls-like"
 

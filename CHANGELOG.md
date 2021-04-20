@@ -1,8 +1,8 @@
 
-## 1.2.5
-* 4a99baf fixing recursive object comparing
-* 2e53202 undoing dependency change
-* 501b019 fixing dependencies
+## 1.2.6
+* 624e2d8 fixing package.json
+* 209e835 Issue 18 real fix (#20)
+## v1.2.5
 * 9299ba7 1.2.5
 * 6a911c5 Merge branch 'master' of github.com:Codibre/chai-callslike into issue-18-Asserting_an_recursive_object_throws_and_error
 * 61e1fec 1.2.4

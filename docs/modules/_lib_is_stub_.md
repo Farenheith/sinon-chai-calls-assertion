@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.5](../README.md) › ["lib/is-stub"](_lib_is_stub_.md)
+[chai-callslike - v1.2.6](../README.md) › ["lib/is-stub"](_lib_is_stub_.md)
 
 # Module: "lib/is-stub"
 

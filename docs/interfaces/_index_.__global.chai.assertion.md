@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.5](../README.md) › ["index"](../modules/_index_.md) › [__global](../modules/_index_.__global.md) › [Chai](../modules/_index_.__global.chai.md) › [Assertion](_index_.__global.chai.assertion.md)
+[chai-callslike - v1.2.6](../README.md) › ["index"](../modules/_index_.md) › [__global](../modules/_index_.__global.md) › [Chai](../modules/_index_.__global.chai.md) › [Assertion](_index_.__global.chai.assertion.md)
 
 # Interface: Assertion
 

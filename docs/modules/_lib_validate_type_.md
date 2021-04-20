@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.5](../README.md) › ["lib/validate-type"](_lib_validate_type_.md)
+[chai-callslike - v1.2.6](../README.md) › ["lib/validate-type"](_lib_validate_type_.md)
 
 # Module: "lib/validate-type"
 

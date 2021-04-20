@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.5](../README.md) › ["lib/colors"](_lib_colors_.md)
+[chai-callslike - v1.2.6](../README.md) › ["lib/colors"](_lib_colors_.md)
 
 # Module: "lib/colors"
 
@@ -18,7 +18,7 @@
 
 ###  colors
 
-• **colors**: *"/home/thiagosantos/Documents/projects/personal/codibre/chai-callslike/node_modules/colors/safe"*
+• **colors**: *"/home/thiago/projects/personal/codibre/chai-callslike/node_modules/.pnpm/colors@1.4.0/node_modules/colors/safe"*
 
 ___
 

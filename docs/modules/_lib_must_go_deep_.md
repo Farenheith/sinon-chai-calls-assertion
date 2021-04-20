@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.5](../README.md) › ["lib/must-go-deep"](_lib_must_go_deep_.md)
+[chai-callslike - v1.2.6](../README.md) › ["lib/must-go-deep"](_lib_must_go_deep_.md)
 
 # Module: "lib/must-go-deep"
 

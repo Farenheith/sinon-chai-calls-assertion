@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.5](../README.md) › ["index"](_index_.md) › [__global](_index_.__global.md)
+[chai-callslike - v1.2.6](../README.md) › ["index"](_index_.md) › [__global](_index_.__global.md)
 
 # Namespace: __global
 
