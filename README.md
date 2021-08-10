@@ -26,6 +26,7 @@ npm i -D sinon-chai-calls-assertion
 ```
 
 ```javascript
+import chai from 'chai'
 import { callsLike } from 'sinon-chai-calls-assertion'
 chai.use(callsLike)
 ```
