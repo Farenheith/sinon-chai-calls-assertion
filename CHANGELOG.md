@@ -1,4 +1,8 @@
 
+## 1.2.7
+* 1c0ee3b fixes required by eslint
+* 543852d Remove critical vulnerabilities from @codibre/confs and handlebars
+
 ## 1.2.6
 * 624e2d8 fixing package.json
 * 209e835 Issue 18 real fix (#20)
