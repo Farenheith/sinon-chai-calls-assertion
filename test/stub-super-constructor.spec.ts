@@ -19,7 +19,7 @@ class Test extends TestBase {
   }
 }
 
-let error: Error;
+let error: any;
 try {
   stubSuperConstructor(Test);
 } catch (err) {
@@ -46,7 +46,7 @@ describe('stub-super-constructor.ts', () => {
     });
 
     it('should throw error trying to mock unexisting super', () => {
-      let threwError: Error;
+      let threwError: any;
       try {
         stubSuperConstructor(TestBase);
       } catch (err) {

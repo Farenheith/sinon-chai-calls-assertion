@@ -9,9 +9,14 @@
       "node",
       "chai",
       "mocha"
+    ],
+    "lib": [
+      "es2018"
     ]
   },
   "include": [
-    "./src", "index.ts", "index.d.ts"
+    "./src",
+    "index.ts",
+    "index.d.ts"
   ]
 }

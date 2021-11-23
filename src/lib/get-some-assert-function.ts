@@ -1,4 +1,3 @@
-import { checkCallCount } from './check-call-count';
 import { info, ids } from './colors';
 import { checkSomeCallsError } from './check-some-calls-error';
 

@@ -33,7 +33,7 @@ describe('expect-call', () => {
 
     it('should reject comparison due to call count', () => {
       const expectator = expect(myStub);
-      let error: Error;
+      let error: any;
       try {
         expectator.callsLike([1, match(/\d/), true]);
       } catch (err) {
@@ -44,7 +44,7 @@ describe('expect-call', () => {
 
     it('should reject if first string is bigger than the second', () => {
       const expectator = expect(myStub2);
-      let error: Error;
+      let error: any;
       try {
         expectator.callsLike(['test']);
       } catch (err) {
@@ -56,7 +56,7 @@ describe('expect-call', () => {
 
     it('should pass if first string is equal to the second', () => {
       const expectator = expect(myStub2);
-      let error: Error;
+      let error: any;
       try {
         expectator.callsLike(['my test']);
       } catch (err) {
@@ -68,7 +68,7 @@ describe('expect-call', () => {
 
     it('should accept first comparison and reject second one', () => {
       const expectator = expect(myStub);
-      let error: Error;
+      let error: any;
       try {
         expectator.callsLike(
           [1, match(/\d/), true],
@@ -85,7 +85,7 @@ describe('expect-call', () => {
 
     it('should accept first comparison and reject second one for lack of parameters', () => {
       const expectator = expect(myStub);
-      let error: Error;
+      let error: any;
       try {
         expectator.callsLike([1, match.string, true], ['1', match.number]);
       } catch (err) {
@@ -98,7 +98,7 @@ describe('expect-call', () => {
 
     it('should pass tests and return another assertion', () => {
       const expectator = expect(myStub);
-      let error: Error;
+      let error: any;
       let result: Chai.Assertion;
       try {
         result = expectator.callsLike(
@@ -119,7 +119,7 @@ describe('expect-call', () => {
 
     it('should give all errors', () => {
       const expectator = expect(myStub);
-      let error: Error;
+      let error: any;
       const test: any = {};
       test.testDeep = test;
 
@@ -174,7 +174,7 @@ describe('expect-call', () => {
 
     it('should reject on the first and second comparison', () => {
       const expectator = expect(myStub);
-      let error: Error;
+      let error: any;
       try {
         expectator.callsLikeRef(
           [1, 'match(/d/)', true],
@@ -206,7 +206,7 @@ describe('expect-call', () => {
 
     it('should reject when no call matches', () => {
       const expectator = expect(myStub);
-      let error: Error;
+      let error: any;
       try {
         expectator.someCallsLike([1, match.number, true]);
       } catch (err) {
@@ -219,7 +219,7 @@ describe('expect-call', () => {
 
     it('should pass tests and return another assertion', () => {
       const expectator = expect(myStub);
-      let error: Error;
+      let error: any;
       let result: Chai.Assertion;
       try {
         result = expectator.callsLike(
@@ -240,7 +240,7 @@ describe('expect-call', () => {
 
     it('should give all errors', () => {
       const expectator = expect(myStub);
-      let error: Error;
+      let error: any;
       const test: any = {};
       test.testDeep = test;
 
