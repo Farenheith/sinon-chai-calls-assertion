@@ -1,4 +1,3 @@
-import { ids } from './colors';
 import { SinonStub } from 'sinon';
 import { checkSingleCallError } from './check-single-call-error';
 import { isStub } from './is-stub';
