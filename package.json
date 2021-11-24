@@ -71,7 +71,7 @@
   "dependencies": {
     "@types/sinon": "^9.0.4",
     "colors": "^1.4.0",
-    "del-cli": "^4.0.1",
+    "del-cli": "^3.0.1",
     "sinon": "^9.0.2"
   }
 }
