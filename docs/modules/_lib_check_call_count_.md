@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.6](../README.md) › ["lib/check-call-count"](_lib_check_call_count_.md)
+[chai-callslike - v1.2.7](../README.md) › ["lib/check-call-count"](_lib_check_call_count_.md)
 
 # Module: "lib/check-call-count"
 

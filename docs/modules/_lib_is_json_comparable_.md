@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.6](../README.md) › ["lib/is-json-comparable"](_lib_is_json_comparable_.md)
+[chai-callslike - v1.2.7](../README.md) › ["lib/is-json-comparable"](_lib_is_json_comparable_.md)
 
 # Module: "lib/is-json-comparable"
 
@@ -12,7 +12,7 @@
 
 ###  isJsonComparable
 
-▸ **isJsonComparable**(`value`: any): *boolean*
+▸ **isJsonComparable**(`value`: any): *any*
 
 **Parameters:**
 
@@ -20,4 +20,4 @@ Name | Type |
 ------ | ------ |
 `value` | any |
 
-**Returns:** *boolean*
+**Returns:** *any*

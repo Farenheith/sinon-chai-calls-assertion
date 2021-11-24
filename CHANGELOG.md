@@ -1,9 +1,13 @@
 
 ## 1.2.7
-* 1c0ee3b fixes required by eslint
-* 543852d Remove critical vulnerabilities from @codibre/confs and handlebars
-
-## 1.2.6
+* db65779 Merge pull request #21 from Codibre/hotfix-remove-lib-vulnerabilities
+* 782161c decrease del-cli version in order to keep node 10 compatibility
+* 95c727c install new libs
+* 5b26cb2 1.2.7
+* 1c0ee3b fix: fixes required by eslint
+* 543852d fix: update @codibre/confs to newest version and remove handlebars critical vulnerability
+## v1.2.6
+* a843f04 1.2.6
 * 624e2d8 fixing package.json
 * 209e835 Issue 18 real fix (#20)
 ## v1.2.5

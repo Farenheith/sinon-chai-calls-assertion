@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.6](../README.md) › ["lib/create-comparable-entries"](_lib_create_comparable_entries_.md)
+[chai-callslike - v1.2.7](../README.md) › ["lib/create-comparable-entries"](_lib_create_comparable_entries_.md)
 
 # Module: "lib/create-comparable-entries"
 
@@ -44,15 +44,15 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (`value`: [string, unknown], `index`: number, `array`: [string, unknown][]): *void*
+▸ (`value`: [], `index`: number, `array`: [][]): *void*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`value` | [string, unknown] |
+`value` | [] |
 `index` | number |
-`array` | [string, unknown][] |
+`array` | [][] |
 
 ___
 
@@ -68,12 +68,12 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (`value`: [string, unknown], `index`: number, `array`: [string, unknown][]): *void*
+▸ (`value`: [], `index`: number, `array`: [][]): *void*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`value` | [string, unknown] |
+`value` | [] |
 `index` | number |
-`array` | [string, unknown][] |
+`array` | [][] |

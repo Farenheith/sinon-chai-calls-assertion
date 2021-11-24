@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.6](../README.md) › ["lib/exactly-equals"](_lib_exactly_equals_.md)
+[chai-callslike - v1.2.7](../README.md) › ["lib/exactly-equals"](_lib_exactly_equals_.md)
 
 # Module: "lib/exactly-equals"
 

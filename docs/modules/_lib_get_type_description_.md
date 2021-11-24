@@ -1,4 +1,4 @@
-[chai-callslike - v1.2.6](../README.md) › ["lib/get-type-description"](_lib_get_type_description_.md)
+[chai-callslike - v1.2.7](../README.md) › ["lib/get-type-description"](_lib_get_type_description_.md)
 
 # Module: "lib/get-type-description"
 

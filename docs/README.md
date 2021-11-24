@@ -1,6 +1,6 @@
-[chai-callslike - v1.2.6](README.md)
+[chai-callslike - v1.2.7](README.md)
 
-# chai-callslike - v1.2.6
+# chai-callslike - v1.2.7
 
 ## Index
 
