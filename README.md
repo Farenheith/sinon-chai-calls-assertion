@@ -20,11 +20,22 @@ Will validate the exactly interaction with the mocked method, which is:
 - Which parameters have been passed to it;
 - In what order the calls happened.
 
+## How to install?
+```sh
+npm i -D sinon-chai-calls-assertion
+```
+
+```javascript
+import chai from 'chai'
+import { callsLike } from 'sinon-chai-calls-assertion'
+chai.use(callsLike)
+```
+
 ## How to use?
 
 Just pass the stub in the first parameter and, in the others, arrays with the set of parameters each calls had received.
 
-```
+```javascript
 expect(myStub).callsLike(
   ['param1call1', 'param2call1', 'param3call1'],
   ['param1call2', 'param2call2', 'param3call2'],
@@ -33,13 +44,13 @@ expect(myStub).callsLike(
 
 If you want to check if the stub had never been called, pass just the stub:
 
-```
+```javascript
 expect(myStub).callsLike();
 ```
 
 If you expect the stub to have been called with no parameters, pass empty arrays:
 
-```
+```javascript
 expect(myStub).callsLike([], [], [])
 ```
 
@@ -47,7 +58,7 @@ _(in this example, myStub have been called three times with no parameters)_
 
 You can also use sinon matchers to validate the parameters instead of exact values:
 
-```
+```javascript
 expect(myStub).callsLike(
   [sinon.match.object, sinon.match.string, sinon.match(/.+foo.+goo/)]
  );
