@@ -22,6 +22,13 @@ Will validate the exactly interaction with the mocked method, which is:
 
 ## How to use?
 
+add the import on the top of your file and bind the chai-callslike inside the chai
+``` typescript
+import { callslike } from 'chai-callslike';
+
+chai.use(callslike)
+```
+
 Just pass the stub in the first parameter and, in the others, arrays with the set of parameters each calls had received.
 
 ```
