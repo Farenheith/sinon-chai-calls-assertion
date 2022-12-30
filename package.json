@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/Farenheith/sinon-chai-calls-assertion#readme",
   "devDependencies": {
-    "@codibre/confs": "0.0.5",
+    "@codibre/confs": "1.1.2",
     "chai": "^4.2.0",
     "eslint": "^7.2.0",
     "mocha": "^8.0.1",
